@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\TiendaAnimal\\TiendaAnimal\\TiendaAnimal.csproj": {}
+    "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\TiendaAnimal\\TiendaAnimal\\TiendaAnimal.csproj": {
+    "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\TiendaAnimal\\TiendaAnimal\\TiendaAnimal.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
         "projectName": "TiendaAnimal",
-        "projectPath": "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\TiendaAnimal\\TiendaAnimal\\TiendaAnimal.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\TiendaAnimal\\TiendaAnimal\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

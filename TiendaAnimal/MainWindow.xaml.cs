@@ -23,6 +23,7 @@ namespace TiendaAnimal
         public MainWindow()
         {
             InitializeComponent();
+            Console.WriteLine("oe");
         }
     }
 }
