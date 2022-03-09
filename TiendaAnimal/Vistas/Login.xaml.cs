@@ -20,6 +20,7 @@ namespace TiendaAnimal.Vistas
         public Login()
         {
             InitializeComponent();
+            Console.WriteLine("Hola");
         }
     }
 }
