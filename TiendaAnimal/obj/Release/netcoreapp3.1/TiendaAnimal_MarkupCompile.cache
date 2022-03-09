@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\
+C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Release\netcoreapp3.1\
 TiendaAnimal
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\App.xaml
 4-1613823172
 
