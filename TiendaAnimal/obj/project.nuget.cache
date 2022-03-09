@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "idTIM2U9c0xupjzK/jtTAEFAJHoKqWESssWmGNkvbn60NGTw/ZIF93T5pxvJCL/w63fvdfN172c5CfIzh61PSw==",
+  "dgSpecHash": "seUXgFPn0ydTgLLm5Oih+xAb6daXAvtHnBhRqvZ+fe34gs6RRKKXx1OG79ONG2VQ1P7PI8oVjy7oPwi8O6fwhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Asus\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
+    "C:\\Users\\USUARIO\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
