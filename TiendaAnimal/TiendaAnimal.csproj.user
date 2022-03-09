@@ -7,7 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Vistas\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Registrar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\tablaGeneral.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Registrar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\tablaGeneral.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
