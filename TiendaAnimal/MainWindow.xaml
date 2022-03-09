@@ -15,12 +15,10 @@
         mc:Ignorable="d"
 Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <Button
-             Style="{StaticResource MaterialDesignFloatingActionButton}"
-  materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
-  materialDesign:ButtonProgressAssist.Value="-1"
-  materialDesign:ButtonProgressAssist.IsIndeterminate="True"
-  Content="{materialDesign:PackIcon DotsHorizontal}"
-  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Height="164" Width="183" Cursor="Hand" />
+        <Label Content="Bienvenido" Height="65" Canvas.Left="165" Canvas.Top="44" Width="371" RenderTransformOrigin="0.499,0.662" FontSize="48"/>
+        
+        
+        
     </Canvas>
+    
 </Window>
