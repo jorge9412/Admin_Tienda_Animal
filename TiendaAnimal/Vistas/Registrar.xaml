@@ -23,16 +23,16 @@
         </Canvas.Background>
         <TextBox x:Name="txt_nombres"
           materialDesign:HintAssist.Hint="Nombres"
-          Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="330" Canvas.Top="78" />
+          Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="330" Canvas.Top="96" />
         <TextBox x:Name="txt_apellidos"
             materialDesign:HintAssist.Hint="Apellidos"
-            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="488" Canvas.Top="78" />
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="488" Canvas.Top="96" />
         <TextBox x:Name="txt_cedula"
             materialDesign:HintAssist.Hint="Cedula"
-            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="330" Canvas.Top="137" />
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="330" Canvas.Top="155" />
         <TextBox x:Name="txt_telefono"
             materialDesign:HintAssist.Hint="Telefono"
-            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="488" Canvas.Top="137" />
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="488" Canvas.Top="155" />
         <TextBox x:Name="txt_usuario"
             materialDesign:HintAssist.Hint="Usuario"
             Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="140" Canvas.Left="330" Canvas.Top="212" />
@@ -43,7 +43,7 @@
             Style="{StaticResource MaterialDesignRaisedDarkButton}"
             materialDesign:ButtonAssist.CornerRadius="25"
             ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
-            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Canvas.Left="420" Canvas.Top="291" Cursor="Hand" Foreground="White" Background="#FF04294D" Height="35" Width="110">
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Canvas.Left="420" Canvas.Top="291" Cursor="Hand" Foreground="White" Background="#FF04294D" Height="35" Width="110" BorderBrush="#FF04294D">
             <TextBlock
             Text="Registrar" />
         </Button>
