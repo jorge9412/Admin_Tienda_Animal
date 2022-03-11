@@ -15,7 +15,7 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid>
-        
+
 
         <Rectangle Height="280" VerticalAlignment="Top">
             <Rectangle.Fill>
@@ -47,7 +47,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock Text="¿No tienes cuenta?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand"/>
+        <TextBlock Text="Crear nueva cuenta" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,380,0,0" Foreground="Gray" Cursor="Hand"/>
         <Image Source="../Assets/home.png" Width="100" Height="100" VerticalAlignment="Top" Margin="350,30,350,0"/>
     </Grid>
 </Window>
