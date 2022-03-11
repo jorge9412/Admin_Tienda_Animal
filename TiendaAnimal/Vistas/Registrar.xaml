@@ -44,5 +44,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+        <Image x:Name="logoRegistro_" HorizontalAlignment="Left" Height="183" Margin="57,98,0,0" VerticalAlignment="Top" Width="188" Source="/Vistas/logoRegistro.png" Stretch="Fill" StretchDirection="Both"/>
     </Grid>
 </Window>

@@ -52,3 +52,4 @@ C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Anim
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.dll
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.pdb
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.genruntimeconfig.cache
+C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
