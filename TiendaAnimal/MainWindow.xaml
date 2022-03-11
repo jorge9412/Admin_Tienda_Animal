@@ -29,7 +29,7 @@ Title="MainWindow" Height="450" Width="800">
             Height="80"
             materialDesign:ButtonAssist.CornerRadius="25"
             ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
-            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Margin="-227,278,227,76" FontSize="20">
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Margin="-224,321,218,33" FontSize="20" Cursor="Hand">
                 <TextBlock
             Text="Iniciar sesión" />
             </Button>
@@ -38,11 +38,15 @@ Title="MainWindow" Height="450" Width="800">
                 Height="80"
                 materialDesign:ButtonAssist.CornerRadius="25"
                 ToolTip="MaterialDesignRaisedDarkButton with Round Corners"
-                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" Margin="172,278,-172,76" FontSize="20">
+                IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}}" Margin="231,321,-231,33" FontSize="20">
                 <TextBlock
                     Text="Registrase" />
             </Button>
         </Grid>
+        <Image HorizontalAlignment="Left" Height="50" Margin="-4,371,0,0" VerticalAlignment="Top" Width="67" Source="/logo-instagram - png.png"/>
+        <Image HorizontalAlignment="Center" Height="433" Margin="0,-47,0,0" VerticalAlignment="Top" Width="426" Source="/mascotas Logotipos (2)-PhotoRoom.png"/>
+        <Image HorizontalAlignment="Left" Height="36" Margin="11,331,0,0" VerticalAlignment="Top" Width="55" Source="/face png.png"/>
+        <Image HorizontalAlignment="Left" Height="146" Margin="325,271,0,0" VerticalAlignment="Top" Width="144" Source="/love huella perro.png"/>
     </Grid>
 
 </Window>
