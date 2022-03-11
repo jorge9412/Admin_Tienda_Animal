@@ -20,6 +20,14 @@ namespace TiendaAnimal.Vistas
         public Login()
         {
             InitializeComponent();
+            
+            string user = txt_user.Text;
+            string pass = txt_pass.Password;
+
+            if(user == "" || pass == "")
+            {
+
+            }
         }
     }
 }
