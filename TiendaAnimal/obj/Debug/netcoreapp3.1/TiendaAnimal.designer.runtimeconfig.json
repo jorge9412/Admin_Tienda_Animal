@@ -6,13 +6,8 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\USUARIO\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\USUARIO\\.nuget\\packages"
-=======
       "C:\\Users\\drojasp\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\drojasp\\.nuget\\packages"
->>>>>>> login
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
