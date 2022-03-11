@@ -53,6 +53,7 @@ C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Anim
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.csproj.CoreCompileInputs.cache
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.csproj.CopyComplete
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\USUARIO\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.exe
 C:\Users\USUARIO\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.deps.json
 C:\Users\USUARIO\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.runtimeconfig.json
@@ -82,3 +83,35 @@ C:\Users\USUARIO\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.
 C:\Users\USUARIO\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.dll
 C:\Users\USUARIO\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.pdb
 C:\Users\USUARIO\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.genruntimeconfig.cache
+=======
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.exe
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.deps.json
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.runtimeconfig.json
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.runtimeconfig.dev.json
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.dll
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\TiendaAnimal.pdb
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.csproj.AssemblyReference.cache
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Login.g.cs
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Registrar.g.cs
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\tablaGeneral.g.cs
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal_MarkupCompile.cache
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal_MarkupCompile.lref
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Login.baml
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Registrar.baml
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\tablaGeneral.baml
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.g.resources
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.AssemblyInfoInputs.cache
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.AssemblyInfo.cs
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.csproj.CoreCompileInputs.cache
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.csproj.CopyComplete
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.dll
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.pdb
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\TiendaAnimal.genruntimeconfig.cache
+>>>>>>> login

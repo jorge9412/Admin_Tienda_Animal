@@ -1,5 +1,5 @@
 ﻿TiendaAnimal
-
+1.0.0.0
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\App.xaml
 4-1613823172
 
-6842878558
+82084923339
 194-1550070664
 MainWindow.xaml;Vistas\Login.xaml;Vistas\Registrar.xaml;Vistas\tablaGeneral.xaml;
 
