@@ -7,8 +7,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="face png.png" />
+    <None Remove="imageonline-co-transparentimage.png" />
+    <None Remove="logo facebook png.png" />
+    <None Remove="logo-instagram - png.png" />
+    <None Remove="love huella perro.png" />
+    <None Remove="mascotas Logotipos %281%29.png" />
+    <None Remove="mascotas Logotipos %282%29-PhotoRoom.png" />
+    <None Remove="mascotas Logotipos-PhotoRoom.png" />
+    <None Remove="mascotas Logotipos_preview_rev_1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="2.0.4" />
     <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="face png.png" />
+    <Resource Include="imageonline-co-transparentimage.png" />
+    <Resource Include="logo facebook png.png" />
+    <Resource Include="logo-instagram - png.png" />
+    <Resource Include="love huella perro.png" />
+    <Resource Include="mascotas Logotipos (1).png" />
+    <Resource Include="mascotas Logotipos (2)-PhotoRoom.png" />
+    <Resource Include="mascotas Logotipos-PhotoRoom.png" />
+    <Resource Include="mascotas Logotipos_preview_rev_1.png" />
   </ItemGroup>
 
 </Project>
