@@ -72,7 +72,7 @@ namespace TiendaAnimal.Vistas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TiendaAnimal;V1.0.0.0;component/vistas/login.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TiendaAnimal;component/vistas/login.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vistas\Login.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

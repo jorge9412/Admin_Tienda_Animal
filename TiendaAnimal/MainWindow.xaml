@@ -13,23 +13,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TiendaAnimal"
         mc:Ignorable="d"
-Title="MainWindow" Height="450" Width="800">
+Title="Bienvenida" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="151*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FF04294D"/>
                 <GradientStop Color="#FF5CEC8E" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <Grid Margin="330,0,52,0" Grid.Column="1">
+            <Button Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-239,0,0,47" Content="Iniciar sesión" FontWeight="Normal" BorderBrush="#FFF3F1F7" Cursor="Hand" >
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF04294D"/>
+                        <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
 
-        <Grid
-        Width="150" Margin="325,0,325,0">
-           
+            <Button Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="148,0,0,47" Content="Registrarse" FontWeight="Normal" BorderBrush="#FFF3F1F7" Cursor="Hand" >
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF04294D"/>
+                        <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
         </Grid>
-        <Image HorizontalAlignment="Left" Height="50" Margin="-4,371,0,0" VerticalAlignment="Top" Width="67" Source="/logo-instagram - png.png"/>
-        <Image HorizontalAlignment="Center" Height="433" Margin="0,-47,0,0" VerticalAlignment="Top" Width="426" Source="/mascotas Logotipos (2)-PhotoRoom.png"/>
-        <Image HorizontalAlignment="Left" Height="36" Margin="11,331,0,0" VerticalAlignment="Top" Width="55" Source="/face png.png"/>
-        <Image HorizontalAlignment="Left" Height="146" Margin="325,271,0,0" VerticalAlignment="Top" Width="144" Source="/love huella perro.png"/>
+        <Image HorizontalAlignment="Left" Height="29" Margin="10,60,0,0" VerticalAlignment="Top" Width="48" Source="/logo-instagram - png.png" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="473" Margin="119,-75,0,0" VerticalAlignment="Top" Width="480" Source="/mascotas Logotipos (2)-PhotoRoom.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="21" Margin="21,25,0,0" VerticalAlignment="Top" Width="39" Source="/face png.png" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="151" Margin="283,273,0,0" VerticalAlignment="Top" Width="144" Source="/love huella perro.png" Grid.Column="1"/>
     </Grid>
-
 </Window>
+
