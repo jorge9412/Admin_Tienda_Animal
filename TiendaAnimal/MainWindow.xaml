@@ -15,18 +15,17 @@
         mc:Ignorable="d"
 Title="Bienvenida" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="9*"/>
-            <ColumnDefinition Width="151*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF04294D"/>
-                <GradientStop Color="#FF5CEC8E" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
+        <Rectangle Height="350" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
         <Grid Margin="330,0,52,0" Grid.Column="1">
-            <Button Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-239,0,0,47" Content="Iniciar sesión" FontWeight="Normal" BorderBrush="#FFF3F1F7" Cursor="Hand" >
+            <Button Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="-239,0,0,47" Content="Iniciar sesión" FontWeight="Normal" BorderBrush="#FFF3F1F7" Cursor="Hand" Click="irLogin" >
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF04294D"/>
@@ -35,7 +34,7 @@ Title="Bienvenida" Height="450" Width="800">
                 </Button.Background>
             </Button>
 
-            <Button Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="148,0,0,47" Content="Registrarse" FontWeight="Normal" BorderBrush="#FFF3F1F7" Cursor="Hand" >
+            <Button Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="148,0,0,47" Content="Registrarse" FontWeight="Normal" BorderBrush="#FFF3F1F7" Cursor="Hand" Click="irRegistro" >
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="#FF04294D"/>
@@ -44,10 +43,10 @@ Title="Bienvenida" Height="450" Width="800">
                 </Button.Background>
             </Button>
         </Grid>
-        <Image HorizontalAlignment="Left" Height="29" Margin="10,60,0,0" VerticalAlignment="Top" Width="48" Source="/logo-instagram - png.png" Grid.ColumnSpan="2"/>
-        <Image HorizontalAlignment="Left" Height="473" Margin="119,-75,0,0" VerticalAlignment="Top" Width="480" Source="/mascotas Logotipos (2)-PhotoRoom.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="29" Margin="10,60,0,0" VerticalAlignment="Top" Width="48" Source="/logo_instagram.png" Grid.ColumnSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="417" Margin="180,-67,0,0" VerticalAlignment="Top" Width="448" Source="/logo.png"/>
         <Image HorizontalAlignment="Left" Height="21" Margin="21,25,0,0" VerticalAlignment="Top" Width="39" Source="/face png.png" Grid.ColumnSpan="2"/>
-        <Image HorizontalAlignment="Left" Height="151" Margin="283,273,0,0" VerticalAlignment="Top" Width="144" Source="/love huella perro.png" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="151" Margin="307,237,0,0" VerticalAlignment="Top" Width="144" Source="/lovehuella.png"/>
     </Grid>
 </Window>
 

@@ -26,7 +26,7 @@ namespace TiendaAnimal.Vistas
 
             if(user == "" || pass == "")
             {
-                MessageBox.Show("Todos los campos son obligatorios.");
+                
             }
         }
     }

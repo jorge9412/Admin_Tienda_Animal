@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TiendaAnimal.Vistas;
 
 namespace TiendaAnimal
 {
@@ -23,7 +24,21 @@ namespace TiendaAnimal
         public MainWindow()
         {
             InitializeComponent();
-            Console.WriteLine("gono");
+        }
+
+        private void irLogin(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            this.Close();
+            login.Show();
+        }
+
+        private void irRegistro(object sender, RoutedEventArgs e)
+        {
+            Registrar login = new Registrar();
+            this.Close();
+            login.Show();
+
         }
     }
 }

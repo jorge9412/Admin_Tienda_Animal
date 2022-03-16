@@ -8,14 +8,13 @@
 
   <ItemGroup>
     <None Remove="face png.png" />
+    <None Remove="fondoPerro.png" />
     <None Remove="imageonline-co-transparentimage.png" />
     <None Remove="logo facebook png.png" />
     <None Remove="logo-instagram - png.png" />
-    <None Remove="love huella perro.png" />
-    <None Remove="mascotas Logotipos %281%29.png" />
-    <None Remove="mascotas Logotipos %282%29-PhotoRoom.png" />
-    <None Remove="mascotas Logotipos-PhotoRoom.png" />
-    <None Remove="mascotas Logotipos_preview_rev_1.png" />
+    <None Remove="logo.png" />
+    <None Remove="logo_instagram.png" />
+    <None Remove="lovehuella.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,15 +23,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\face png.png" />
     <Resource Include="face png.png" />
+    <Resource Include="fondoPerro.png" />
     <Resource Include="imageonline-co-transparentimage.png" />
     <Resource Include="logo facebook png.png" />
-    <Resource Include="logo-instagram - png.png" />
-    <Resource Include="love huella perro.png" />
-    <Resource Include="mascotas Logotipos (1).png" />
-    <Resource Include="mascotas Logotipos (2)-PhotoRoom.png" />
-    <Resource Include="mascotas Logotipos-PhotoRoom.png" />
-    <Resource Include="mascotas Logotipos_preview_rev_1.png" />
+    <Resource Include="Assets\logo_instagram.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="logo_instagram.png" />
+    <Resource Include="Assets\lovehuella.png" />
+    <Resource Include="lovehuella.png" />
   </ItemGroup>
 
 </Project>
