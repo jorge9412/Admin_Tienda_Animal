@@ -7,14 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="face png.png" />
-    <None Remove="fondoPerro.png" />
-    <None Remove="imageonline-co-transparentimage.png" />
-    <None Remove="logo facebook png.png" />
     <None Remove="logo-instagram - png.png" />
     <None Remove="logo.png" />
-    <None Remove="logo_instagram.png" />
-    <None Remove="lovehuella.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,15 +18,9 @@
 
   <ItemGroup>
     <Resource Include="Assets\face png.png" />
-    <Resource Include="face png.png" />
-    <Resource Include="fondoPerro.png" />
-    <Resource Include="imageonline-co-transparentimage.png" />
-    <Resource Include="logo facebook png.png" />
     <Resource Include="Assets\logo_instagram.png" />
-    <Resource Include="logo.png" />
-    <Resource Include="logo_instagram.png" />
     <Resource Include="Assets\lovehuella.png" />
-    <Resource Include="lovehuella.png" />
+    <Resource Include="logo.png" />
   </ItemGroup>
 
 </Project>
