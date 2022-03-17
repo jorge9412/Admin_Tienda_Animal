@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj": {}
+    "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj": {
+    "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
         "projectName": "TiendaAnimal",
-        "projectPath": "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
-        "packagesPath": "C:\\Users\\drojasp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\obj\\",
+        "projectPath": "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\Admin_Tienda_Animal\\TiendaAnimal\\TiendaAnimal.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\OneDrive\\Documentos\\Pascual bravo\\HERRAMIENTAS 3\\Admin_Tienda_Animal\\TiendaAnimal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\drojasp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,6 +47,10 @@
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [
@@ -67,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

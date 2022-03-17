@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,13 +23,43 @@ namespace TiendaAnimal.Vistas
         {
             InitializeComponent();
             
-            string user = txt_user.Text;
-            string pass = txt_pass.Password;
+        }
 
-            if(user == "" || pass == "")
+        private void btn_ingresar_Click(object sender, RoutedEventArgs e)
+        {
+            if (txt_user.Text == string.Empty || txt_pass.Password == string.Empty)
             {
-                
+                MessageBox.Show("Llenar campos");
             }
+            else
+            {
+                try
+                {
+                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
+                    conn.Open();
+                    using (SqlCommand command = conn.CreateCommand())
+                    {
+                        SqlCommand cmd = new SqlCommand("SELECT usuario, contraseña FROM LoginUser WHERE usuario = '" + txt_user.Text + "' AND contraseña ='" + txt_pass.Password + "'", conn);
+                        SqlDataReader dr = cmd.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            this.Hide();
+                            tablaGeneral general = new tablaGeneral();
+                            general.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Datos incorrectos");
+                        }
+                        dr.Close();
+                        conn.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }  
         }
     }
 }
