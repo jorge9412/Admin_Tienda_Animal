@@ -20,6 +20,24 @@ namespace TiendaAnimal.Vistas
         public tablaGeneral()
         {
             InitializeComponent();
+
+
         }
+
+        private void irLogin(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            this.Close();
+            login.Show();
+        }
+
+        private void irRegistro(object sender, RoutedEventArgs e)
+        {
+            Registrar login = new Registrar();
+            this.Close();
+            login.Show();
+
+        }
+
     }
 }
