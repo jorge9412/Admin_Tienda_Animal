@@ -15,7 +15,7 @@
         mc:Ignorable="d"
         Title="Registrar" Height="450" Width="800">
     <Grid Margin="0,0,0,10" Height="450" Width="800">
-        <Rectangle Height="348" VerticalAlignment="Top">
+        <Rectangle Height="322" VerticalAlignment="Top">
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -24,19 +24,20 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Height="345" VerticalAlignment="Top" Margin="291,25,44,0" RadiusY="10" RadiusX="10" Fill="White">
+        <Rectangle Height="345" VerticalAlignment="Top" Margin="300,25,44,0" RadiusY="10" RadiusX="10" Fill="White">
             <Rectangle.Effect>
                 <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Label Content="Registrarse" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="449,25,0,0" Foreground="Gray" FontSize="28"/>
-        <TextBox x:Name="txt_nombres" materialDesign:HintAssist.Hint="Nombres" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,99,276,294"/>
-        <PasswordBox x:Name="txt_apellidos"  Margin="548,99,64,294" materialDesign:HintAssist.Hint="Apellidos" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+        <Label 
+           BorderBrush="Transparent" Content="Registrarse" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,25,0,0" Foreground="White" FontSize="28" Width="456" Background="#FF5CEC8E"/>
+        <TextBox x:Name="txt_nombres" materialDesign:HintAssist.Hint="Nombres" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,99,276,294" Cursor="IBeam"/>
+        <TextBox x:Name="txt_apellidos" materialDesign:HintAssist.Hint="Apellidos" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,99,52,294" Cursor="IBeam"/>
         <TextBox x:Name="txt_cedula" materialDesign:HintAssist.Hint="Cedula" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,161,276,232"/>
         <TextBox x:Name="txt_correo" materialDesign:HintAssist.Hint="Correo" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,156,64,237"/>
         <TextBox x:Name="txt_usuario" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,225,276,168"/>
         <TextBox x:Name="txt_contraseña" materialDesign:HintAssist.Hint="Contraseña" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,225,64,168"/>
-        <Button Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="464,0,0,65" Content="Guardar" FontWeight="Normal" BorderBrush="#FFF3F1F7" >
+        <Button x:Name="btn_guardar_usuario" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="548,0,0,69" Content="Guardar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_guardar_usuario_Click" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -44,6 +45,14 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Image x:Name="logoRegistro_" HorizontalAlignment="Left" Height="200" Margin="35,81,0,0" VerticalAlignment="Top" Width="210" Source="../Assets/logoRegistro.png" Stretch="Fill" StretchDirection="Both"/>
+        <Image x:Name="logoRegistro_" HorizontalAlignment="Left" Height="41" Margin="700,25,0,0" VerticalAlignment="Top" Width="48" Source="../Assets/registrar.png" Stretch="Fill" StretchDirection="Both"/>
+        <Button x:Name="btn_cerrar_envio" Width="140" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="384,0,0,69" Content="Cerrar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_cerrar_resgitro_Click" Cursor="Hand" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

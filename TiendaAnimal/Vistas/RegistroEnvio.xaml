@@ -1,0 +1,71 @@
+﻿<Window x:Class="AdminAlmacen.Vistas.RegistroEnvio"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdminAlmacen.Vistas"
+        mc:Ignorable="d"
+        Title="RegistroEnvio" Height="600" Width="1000">
+    <Grid Margin="0,0,0,10" Height="600" Width="1000">
+
+        <Rectangle Height="414" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Name="lbl_fecha" Content="Fecha dia de hoy: "/>
+        <Rectangle Height="509" VerticalAlignment="Top" Margin="209,25,44,0" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <TextBox x:Name="txt_nombre_cliente" materialDesign:HintAssist.Hint="Nombre Cliente" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="227,86,540,452" Cursor="IBeam"/>
+        <TextBox x:Name="txt_apellidos_cliente" materialDesign:HintAssist.Hint="Apellidos" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="480,86,286,452" Cursor="IBeam"/>
+        <TextBox x:Name="txt_cedula_cliente" materialDesign:HintAssist.Hint="Cedula" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="728,84,58,452"/>
+        <TextBox x:Name="txt_celular_cliente" materialDesign:HintAssist.Hint="Celular" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="227,148,540,393"/>
+        <TextBox x:Name="txt_correo_cliente" materialDesign:HintAssist.Hint="Correo" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="480,148,287,393"/>
+        <TextBox x:Name="txt_direccion_cliente" materialDesign:HintAssist.Hint="Dirección" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="728,148,58,393"/>
+        <Button x:Name="btn_guardar_envio" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="760,0,0,55" Content="Guardar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_guardar_envio_Click" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btn_cerrar_registro" Width="156" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="304,0,0,55" Content="Cerrar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_cerrar_envio_Click" Cursor="Hand" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Label Content="Información origen" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="208,25,0,0" Foreground="White" FontSize="28" Background="#FF5CEC8E" Width="748"/>
+        <Image x:Name="logoRegistro_" HorizontalAlignment="Left" Height="36" Margin="910,28,0,0" VerticalAlignment="Top" Width="44" Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\enviar.png" Stretch="Fill" StretchDirection="Both"/>
+        <Label Content="Información destino" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="209,251,0,0" Foreground="White" FontSize="28" Background="#FF5CEC8E" Width="747"/>
+        <TextBox x:Name="txt_nombre_destinatario" materialDesign:HintAssist.Hint="Nombre destinatario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="227,293,540,245" Cursor="IBeam"/>
+        <TextBox x:Name="txt_cedula_destinatario" materialDesign:HintAssist.Hint="Cedula destinatario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="480,293,286,245" Cursor="IBeam"/>
+        <TextBox x:Name="txt_ciudad_destino" materialDesign:HintAssist.Hint="Ciudad destino" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="728,355,58,181"/>
+        <TextBox x:Name="txt_ciudad_origen_envio" materialDesign:HintAssist.Hint="Ciudad origen" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="481,360,286,181"/>
+        <TextBox x:Name="txt_direccion_destinatario" materialDesign:HintAssist.Hint="Dirección destino" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="728,296,58,245"/>
+        <TextBox x:Name="txt_precio_envio" materialDesign:HintAssist.Hint="Precio" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="226,356,540,182" Cursor="IBeam"/>
+        <TextBox x:Name="txt_descripcion_envio" materialDesign:HintAssist.Hint="Descripción" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="226,423,58,115" Cursor="IBeam"/>
+    </Grid>
+</Window>

@@ -7,13 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Vistas\Login.xaml.cs">
+    <Compile Update="Vistas\Content_ListaEnvios.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\envio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Vistas\Registrar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Vistas\tablaGeneral.xaml.cs">
+    <Compile Update="Vistas\RegistroEnvio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Usuarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,13 +27,19 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\Login.xaml">
+    <Page Update="Vistas\Content_ListaEnvios.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\envio.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistas\Registrar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\tablaGeneral.xaml">
+    <Page Update="Vistas\RegistroEnvio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Usuarios.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

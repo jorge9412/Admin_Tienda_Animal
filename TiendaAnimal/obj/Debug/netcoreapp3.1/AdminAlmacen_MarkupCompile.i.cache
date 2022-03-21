@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\
+C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\
 AdminAlmacen
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\App.xaml
-4-1613823172
+C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\App.xaml
+61648612104
 
-8-201449300
-195-1368689788
-MainWindow.xaml;Vistas\Login.xaml;Vistas\Registrar.xaml;Vistas\tablaGeneral.xaml;
+10-17062158
+1952056902197
+MainWindow.xaml;Vistas\Content_ListaEnvios.xaml;Vistas\envio.xaml;Vistas\Registrar.xaml;Vistas\RegistroEnvio.xaml;Vistas\Usuarios.xaml;
 
 False
 

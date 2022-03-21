@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdminAlmacen.Vistas;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -47,7 +48,7 @@ namespace TiendaAnimal
                         if (dr.Read())
                         {
                             this.Hide();
-                            tablaGeneral general = new tablaGeneral();
+                            envio general = new envio();
                             general.Show();
                         }
                         else
