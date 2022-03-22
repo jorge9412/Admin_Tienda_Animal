@@ -9,6 +9,7 @@
   <ItemGroup>
     <None Remove="logo-instagram - png.png" />
     <None Remove="logo.png" />
+    <None Remove="Vistas\Admin Envios BLANCO.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +23,7 @@
     <Resource Include="Assets\logo_instagram.png" />
     <Resource Include="Assets\lovehuella.png" />
     <Resource Include="logo.png" />
+    <Resource Include="Vistas\Admin Envios BLANCO.png" />
   </ItemGroup>
 
 </Project>

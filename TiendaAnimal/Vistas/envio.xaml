@@ -139,22 +139,23 @@
                   HorizontalAlignment="Right"
                   Height="565"
                   Width="925">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="276*"/>
-                    <ColumnDefinition Width="294*"/>
-                    <ColumnDefinition Width="187*"/>
-                    <ColumnDefinition Width="143*"/>
-                    <ColumnDefinition Width="25*"/>
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="29*"/>
+                    <ColumnDefinition Width="29*"/>
+                    <ColumnDefinition Width="29*"/>
+                    <ColumnDefinition Width="129*"/>
+                    <ColumnDefinition Width="29*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="367*"/>
-                    <RowDefinition Height="198*"/>
-                </Grid.RowDefinitions>
+                    <RowDefinition Height="36*"/>
+                    <RowDefinition Height="36*"/>
+                </Grid.RowDefinitions>-->
                 <Border CornerRadius="0,0,0,10"
                         Opacity="0.9"
-                        Background="White" PreviewMouseLeftButtonDown="PreviewMouseLeftBotton" Grid.RowSpan="2" Grid.ColumnSpan="5"/>
-                <Image HorizontalAlignment="Left" Height="416" Margin="244,0,0,0" VerticalAlignment="Center" Width="448" Source="/logo.png" Grid.ColumnSpan="3"/>
-                <ContentControl Content="{Binding}" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="-84,108,59,-108"/>
+                        Background="White" PreviewMouseLeftButtonDown="PreviewMouseLeftBotton" Grid.RowSpan="2" Grid.ColumnSpan="5">
+                    <Label Content="Label" HorizontalAlignment="Left" Height="50" Margin="584,21,0,0" VerticalAlignment="Top" Width="111"/>
+                </Border>
+                <!--<ContentControl Content="{Binding}" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="-84,108,59,-108"/>-->
 
             </Grid>
             <!--REGION SIDEBAR-->
