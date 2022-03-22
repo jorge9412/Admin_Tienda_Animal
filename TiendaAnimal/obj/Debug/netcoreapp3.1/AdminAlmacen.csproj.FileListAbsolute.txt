@@ -77,3 +77,47 @@ C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Anim
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\RegistroEnvio.g.cs
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Content_ListaEnvios.baml
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\RegistroEnvio.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\AdminAlmacen.exe
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\AdminAlmacen.dll.config
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\AdminAlmacen.deps.json
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\AdminAlmacen.runtimeconfig.json
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\AdminAlmacen.runtimeconfig.dev.json
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\AdminAlmacen.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\AdminAlmacen.pdb
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.csproj.AssemblyReference.cache
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Content_ListaEnvios.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\envio.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Registrar.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\RegistroEnvio.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Usuarios.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen_MarkupCompile.cache
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen_MarkupCompile.lref
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\App.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Content_ListaEnvios.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\envio.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Registrar.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\RegistroEnvio.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Usuarios.baml
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.g.resources
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.AssemblyInfoInputs.cache
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.AssemblyInfo.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.csproj.CoreCompileInputs.cache
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.csproj.CopyComplete
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.dll
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.pdb
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\AdminAlmacen.genruntimeconfig.cache
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Borrar.g.cs
+C:\Users\drojasp\Downloads\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Borrar.baml

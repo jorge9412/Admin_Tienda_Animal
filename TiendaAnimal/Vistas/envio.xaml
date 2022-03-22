@@ -70,7 +70,7 @@
                             <Image Grid.Column="0"
                                    HorizontalAlignment="Center"
                                    VerticalAlignment="Center"
-                                   Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\config.png"/>
+                                   Source="..\Assets\config.png"/>
                         </Grid>
                     </Button>
                     <!--#info-->
@@ -92,7 +92,7 @@
                                 <ColumnDefinition Width="15"/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
-                            <Image Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\info.png"
+                            <Image Source="..\Assets\info.png"
                                    Grid.Column="0"
                                    VerticalAlignment="Top" Grid.RowSpan="2"/>
                             <TextBlock Text="Acerca de"
@@ -113,7 +113,7 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
                             Margin="0,-3,55,0" Click="Minimizar">
-                        <Image Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\minimize.png"                                  
+                        <Image Source="..\Assets\minimize.png"                                  
                                 Cursor="Hand"/>
                     </Button>
                     <!--CERRAR-->
@@ -126,7 +126,7 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
                             Margin="0,5,5,0" Click="Cerrar">
-                        <Image Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\close.png"                                  
+                        <Image Source="..\Assets\close.png"                                  
                                 Cursor="Hand"/>
                     </Button>
                 </Grid>
@@ -140,8 +140,11 @@
                   Height="565"
                   Width="925">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="757*"/>
-                    <ColumnDefinition Width="168*"/>
+                    <ColumnDefinition Width="276*"/>
+                    <ColumnDefinition Width="294*"/>
+                    <ColumnDefinition Width="187*"/>
+                    <ColumnDefinition Width="143*"/>
+                    <ColumnDefinition Width="25*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="367*"/>
@@ -149,9 +152,9 @@
                 </Grid.RowDefinitions>
                 <Border CornerRadius="0,0,0,10"
                         Opacity="0.9"
-                        Background="White" PreviewMouseLeftButtonDown="PreviewMouseLeftBotton" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
-                <Image HorizontalAlignment="Center" Height="417" Margin="180,-67,0,0" VerticalAlignment="Center" Width="448" Source="/logo.png"/>
-                <ContentControl Content="{Binding}" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                        Background="White" PreviewMouseLeftButtonDown="PreviewMouseLeftBotton" Grid.RowSpan="2" Grid.ColumnSpan="5"/>
+                <Image HorizontalAlignment="Left" Height="416" Margin="244,0,0,0" VerticalAlignment="Center" Width="448" Source="/logo.png" Grid.ColumnSpan="3"/>
+                <ContentControl Content="{Binding}" Grid.RowSpan="2" Grid.ColumnSpan="4" Margin="-84,108,59,-108"/>
 
             </Grid>
             <!--REGION SIDEBAR-->
@@ -192,9 +195,9 @@
                                       Height="30"
                                       Cursor="Hand"
                                       BorderBrush="Transparent" Grid.RowSpan="2" Checked="TBShow" Unchecked="TBHide">
-                            <ToggleButton.Background>
-                                <ImageBrush ImageSource="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\menu.png"/>
-                            </ToggleButton.Background>
+                            <!-- <ToggleButton.Background>
+                                <ImageBrush ImageSource="..\Assets\menu.png"/>
+                            </ToggleButton.Background>-->
                             <ToggleButton.Triggers>
                                 <!--FIN MENU-->
                                 <!--FIN MENU-->
@@ -253,7 +256,7 @@
                                     </Grid.ColumnDefinitions>
                                     <Image Width="50"
                                            HorizontalAlignment="Center"
-                                           Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\home.png" Grid.RowSpan="2"/>
+                                           Source="..\Assets\home.png" Grid.RowSpan="2"/>
                                     <TextBlock Grid.Column="1"
                                                Text="Inicio"
                                                FontWeight="SemiBold"
@@ -282,7 +285,7 @@
                                     </Grid.ColumnDefinitions>
                                     <Image Width="50"
                                            HorizontalAlignment="Center"
-                                           Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\enviar.png" Height="44" VerticalAlignment="Top"/>
+                                           Source="..\Assets\enviar.png" Height="44" VerticalAlignment="Top"/>
                                     <TextBlock Grid.Column="1"
                                                Text="Envios"
                                                FontWeight="SemiBold"
@@ -312,7 +315,7 @@
                                     <Image Width="50"
                                            Grid.Column="0"
                                            HorizontalAlignment="Center"
-                                           Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\perfil.png"/>
+                                           Source="..\Assets\perfil.png"/>
                                     <TextBlock Grid.Column="1"
                                                Text="Personas"
                                                FontWeight="SemiBold"
