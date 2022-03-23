@@ -29,7 +29,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle Height="407" VerticalAlignment="Bottom" Margin="292,0,301,130" RadiusY="10" RadiusX="10" Fill="White">
+        <Rectangle Height="384" VerticalAlignment="Bottom" Margin="292,0,301,153" RadiusY="10" RadiusX="10" Fill="White">
             <Rectangle.Effect>
                 <DropShadowEffect BlurRadius="20" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
             </Rectangle.Effect>
@@ -44,7 +44,7 @@
                  Margin="391,166,388,355" 
                  materialDesign:HintAssist.Hint="Usuario" 
                  Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
-                 FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.601,-1.432"/>
+                 FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.601,-1.432" Cursor="IBeam"/>
         <PasswordBox Name="txt_pass" CaretBrush="#FF04294D" 
                      materialDesign:TextFieldAssist.UnderlineBrush="#FF04294D" 
                      Margin="391,250,388,271"
@@ -52,7 +52,7 @@
                      materialDesign:HintAssist.Hint="Contraseña" 
                      Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Cursor="IBeam"/>
 
-        <Button x:Name="btn_ingresar" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,336,0,0" Content="Ingresar" BorderBrush="#FF646161" Cursor="Hand" Click="btn_ingresar_Click">
+        <Button x:Name="btn_ingresar" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,348,0,0" Content="Ingresar" BorderBrush="#FF646161" Cursor="Hand" Click="btn_ingresar_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -60,9 +60,6 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-
-
-
     </Grid>
 </Window>
 

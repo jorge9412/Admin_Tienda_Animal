@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
+using System.Windows.Media.Animation;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -20,6 +21,17 @@ namespace AdminAlmacen.Vistas
         public envio()
         {
             InitializeComponent();
+            animacionLogo();
+
+        }
+
+        public void animacionLogo()
+        {
+            var fadeAnimation = new DoubleAnimation();
+            fadeAnimation.From = 1;
+            fadeAnimation.To = 0;
+            fadeAnimation.AutoReverse = true;
+            img_logo.BeginAnimation(Image.OpacityProperty, fadeAnimation);
         }
 
         private void TBShow(object sender, RoutedEventArgs e)

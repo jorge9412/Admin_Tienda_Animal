@@ -94,13 +94,13 @@
                             </Grid.ColumnDefinitions>
                             <Image Source="/Vistas/info.png"
                                    Grid.Column="0"
-                                   VerticalAlignment="Top" Grid.RowSpan="2"/>
+                                   VerticalAlignment="Top" Margin="-5,2,0,0" Grid.RowSpan="2"/>
                             <TextBlock Text="Acerca de"
                                        Grid.Column="1"
                                        Foreground="White"
                                        HorizontalAlignment="Left"
                                        VerticalAlignment="Top"
-                                       Margin="5,2,0,0" Grid.RowSpan="2"/>
+                                       Margin="3,1,0,0" Grid.RowSpan="2"/>
                         </Grid>
                     </Button>
                     <!--MINIMIZAR-->
@@ -153,7 +153,7 @@
                 <Border CornerRadius="0,0,0,10"
                         Opacity="0.9"
                         Background="White" PreviewMouseLeftButtonDown="PreviewMouseLeftBotton" Grid.RowSpan="2" Grid.ColumnSpan="5" Margin="3,0,-3,0">
-                    <Image HorizontalAlignment="Left" VerticalAlignment="Center" Width="738" Source="/Vistas/Assets/Admin Envios BLANCO.png" Margin="138,0,0,0"/>
+                    <Image Name="img_logo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="738" Source="/Vistas/Assets/Admin Envios BLANCO.png" Margin="138,84,0,0"/>
                 </Border>
                 <ContentControl Content="{Binding}" Grid.RowSpan="2" Grid.ColumnSpan="5" HorizontalAlignment="Center"/>
 
@@ -255,7 +255,9 @@
                                     </Grid.ColumnDefinitions>
                                     <Image Width="50"
                                            HorizontalAlignment="Center"
-                                           Source="/Vistas/home.png" Grid.RowSpan="2"/>
+                                           Source="/Vistas/home.png" Grid.RowSpan="2"
+                                           
+                                           />
                                     <TextBlock Grid.Column="1"
                                                Text="Inicio"
                                                FontWeight="SemiBold"
@@ -284,7 +286,7 @@
                                     </Grid.ColumnDefinitions>
                                     <Image Width="50"
                                            HorizontalAlignment="Center"
-                                           Source="/Vistas/enviar.png" Height="44" VerticalAlignment="Top"/>
+                                           Source="/Vistas/entrega.png" Height="44" VerticalAlignment="Top"/>
                                     <TextBlock Grid.Column="1"
                                                Text="Envios"
                                                
@@ -315,7 +317,7 @@
                                     <Image Width="50"
                                            Grid.Column="0"
                                            HorizontalAlignment="Center"
-                                           Source="/Vistas/perfil.png"/>
+                                           Source="/Vistas/red.png"/>
                                     <TextBlock Grid.Column="1"
                                                Text="Personas"
                                                FontWeight="SemiBold"
