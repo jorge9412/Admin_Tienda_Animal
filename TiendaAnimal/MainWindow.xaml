@@ -17,11 +17,10 @@
         Height="600" 
         Width="1000">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="333*"/>
-            <ColumnDefinition Width="67*"/>
-        </Grid.ColumnDefinitions>
-        <Rectangle Height="292" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <Rectangle Height="368" VerticalAlignment="Top">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
             <Rectangle.Fill>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -30,20 +29,30 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-
-        <Rectangle Width="280" Height="240" VerticalAlignment="Bottom" Margin="360,0,193,245" RadiusY="10" RadiusX="10" Fill="White">
+        <Rectangle Height="407" VerticalAlignment="Bottom" Margin="292,0,301,130" RadiusY="10" RadiusX="10" Fill="White">
             <Rectangle.Effect>
-                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+                <DropShadowEffect BlurRadius="20" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Grid VerticalAlignment="Bottom" Margin="35,0,35,80" Height="240" Grid.ColumnSpan="2">
-            <Label Content="Iniciar sesion" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-162,0,0" Foreground="Gray" FontSize="18"/>
-            <StackPanel VerticalAlignment="Top" Margin="20,-127,10,0">
-                <TextBox Name="txt_user" Margin="0,10" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Width="224" RenderTransformOrigin="0.601,-1.432"/>
-                <PasswordBox Name="txt_pass"  Margin="0,10" materialDesign:HintAssist.Hint="Contraseña" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Width="230"/>
-            </StackPanel>
-        </Grid>
-        <Button x:Name="btn_ingresar" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="425,0,0,234" Content="Ingresar" BorderBrush="#FF646161" Cursor="Hand" Click="btn_ingresar_Click">
+        <Image HorizontalAlignment="Left" Height="49" Margin="478,59,0,0" VerticalAlignment="Top" Width="49" Source="/user.png"/>
+
+        <Label Content="Iniciar sesion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="446,128,0,0" Foreground="Gray" FontSize="18"/>
+
+        <TextBox Name="txt_user" CaretBrush="#FF04294D" 
+                 materialDesign:HintAssist.Foreground="#FF04294D"
+                 materialDesign:TextFieldAssist.UnderlineBrush="#FF04294D"  
+                 Margin="391,166,388,355" 
+                 materialDesign:HintAssist.Hint="Usuario" 
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                 FontFamily="Champagne &amp; Limousines" FontSize="18" RenderTransformOrigin="0.601,-1.432"/>
+        <PasswordBox Name="txt_pass" CaretBrush="#FF04294D" 
+                     materialDesign:TextFieldAssist.UnderlineBrush="#FF04294D" 
+                     Margin="391,250,388,271"
+                     materialDesign:HintAssist.Foreground="#FF04294D"
+                     materialDesign:HintAssist.Hint="Contraseña" 
+                     Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Cursor="IBeam"/>
+
+        <Button x:Name="btn_ingresar" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,336,0,0" Content="Ingresar" BorderBrush="#FF646161" Cursor="Hand" Click="btn_ingresar_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -51,6 +60,9 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
+
+
+
     </Grid>
 </Window>
 
