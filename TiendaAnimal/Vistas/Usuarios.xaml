@@ -41,9 +41,16 @@
                                             BorderBrush="Transparent"
                                             Foreground="White" 
                                             Click="Editar"      
-                                            CommandParameter="{Binding id_login}" 
+                                            CommandParameter="{Binding id_login}"
                                             />
-
+                                    <Button Content="Eliminar"
+                                            Name="btnEliminar"
+                                            Background="#EC4134"
+                                            Width="85"
+                                            BorderBrush="Transparent"
+                                            Foreground="White"                                              
+                                            CommandParameter="{Binding id_login}" Click="Eliminar"
+                                            />
                                 </DockPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

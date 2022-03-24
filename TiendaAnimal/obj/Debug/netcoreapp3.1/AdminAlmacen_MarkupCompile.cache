@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\App.xaml
-8644588084
+92012699017
 
-10-961534170
+11-1263979701
 1952056902197
-MainWindow.xaml;Vistas\Borrar.xaml;Vistas\Content_ListaEnvios.xaml;Vistas\CrudUsuarios.xaml;Vistas\envio.xaml;Vistas\Registrar.xaml;Vistas\RegistroEnvio.xaml;Vistas\Usuarios.xaml;
+MainWindow.xaml;Vistas\Assets\Crud.xaml;Vistas\Borrar.xaml;Vistas\Content_ListaEnvios.xaml;Vistas\CrudUsuarios.xaml;Vistas\envio.xaml;Vistas\Registrar.xaml;Vistas\RegistroEnvio.xaml;Vistas\Usuarios.xaml;
 
 False
 

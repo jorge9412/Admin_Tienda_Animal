@@ -31,12 +31,12 @@ namespace AdminAlmacen.Vistas
             SqlCommand com = new SqlCommand("Select * From LoginUser where id_login=" + id_login, conn);
             SqlDataReader rdr = com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
             rdr.Read();
-            this.txt_nombres.Text = rdr["usuario"].ToString();
-            this.txt_nombres.Text = rdr["contraseña"].ToString();
+            this.txt_usuario.Text = rdr["usuario"].ToString();
+            this.txt_contraseña.Text = rdr["contraseña"].ToString();
             this.txt_nombres.Text = rdr["nombres"].ToString();
-            this.txt_nombres.Text = rdr["apellidos"].ToString();
-            this.txt_nombres.Text = rdr["cedula"].ToString();
-            this.txt_nombres.Text = rdr["correo"].ToString();
+            this.txt_apellidos.Text = rdr["apellidos"].ToString();
+            this.txt_cedula.Text = rdr["cedula"].ToString();
+            this.txt_correo.Text = rdr["correo"].ToString();
             rdr.Close();
 
         }

@@ -31,7 +31,7 @@ namespace AdminAlmacen.Vistas
         void CargarDatos()
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("Select usuario, nombres,apellidos,cedula,correo from LoginUser", conn);
+            SqlCommand cmd = new SqlCommand("Select id_login, usuario, nombres,apellidos,cedula,correo from LoginUser", conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -67,13 +67,15 @@ namespace AdminAlmacen.Vistas
         }
         private void Editar(object sender, RoutedEventArgs e)
         {
-            int id = (int)((Button)sender).CommandParameter;
+            
             try
-            {                                
+            {
+                int id = (int)((Button)sender).CommandParameter;
                 CrudUsuarios ventana = new CrudUsuarios();
                 ventana.id_login = id;
                 ventana.Consultar();
-                FrameUsuarios.Content = ventana;
+                ventana.Show();
+                //FrameUsuarios.= ventana;
             }
             catch (Exception ex)
             {
@@ -81,6 +83,11 @@ namespace AdminAlmacen.Vistas
             }
             
       
+        }
+
+        private void Eliminar(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
