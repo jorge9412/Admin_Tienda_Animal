@@ -65,5 +65,22 @@ namespace AdminAlmacen.Vistas
                 MessageBox.Show("Sin datos");
             }
         }
+        private void Editar(object sender, RoutedEventArgs e)
+        {
+            int id = (int)((Button)sender).CommandParameter;
+            try
+            {                                
+                CrudUsuarios ventana = new CrudUsuarios();
+                ventana.id_login = id;
+                ventana.Consultar();
+                FrameUsuarios.Content = ventana;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+            
+      
+        }
     }
 }

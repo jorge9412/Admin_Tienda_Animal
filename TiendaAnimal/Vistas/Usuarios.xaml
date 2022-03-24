@@ -26,10 +26,28 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <!--REGION COLUMNS & ROWS-->
-            <DataGrid Margin="138,168,72,43" 
+            <DataGrid Margin="10,168,10,43" 
                       AutoGenerateColumns="False"
                       x:Name="GridDatos">
                 <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Opcion admin" Width="200">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <Button Content="Editar"
+                                            Name="btnEditar"
+                                            Background="#FF04294D"
+                                            Width="85"
+                                            BorderBrush="Transparent"
+                                            Foreground="White" 
+                                            Click="Editar"      
+                                            CommandParameter="{Binding id_login}" 
+                                            />
+
+                                </DockPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                     <DataGridTextColumn Width="130" Header="Usuario" IsReadOnly="True" Binding="{Binding usuario}"/>
                     <DataGridTextColumn Width="130" Header="Nombres" IsReadOnly="True" Binding="{Binding nombres}"/>
                     <DataGridTextColumn Width="130" Header="Apellidos" IsReadOnly="True" Binding="{Binding apellidos}"/>
@@ -54,7 +72,12 @@
             <Label Content="ADMINISTRACION DE USUARIOS" HorizontalAlignment="Left" Margin="210,0,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontStyle="Normal" FontFamily="Adobe Gothic Std B"/>
             <Label x:Name="lbl_buscar_usuario" Content="Buscar:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontStyle="Normal" FontFamily="Adobe Gothic Std B"/>
             <TextBox x:Name="txt_buscar" materialDesign:HintAssist.Hint="filtrar" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="138,110,72,402" Cursor="IBeam" TextChanged="txt_buscar_click"/>
-
+            <Frame x:Name="FrameUsuarios"
+               Grid.Column="0"
+               Grid.Row="0"
+               Grid.RowSpan="8"
+               Grid.ColumnSpan="6"/>
         </Grid>
+
     </Border>
 </UserControl>

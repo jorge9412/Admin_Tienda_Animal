@@ -1,0 +1,57 @@
+﻿<Window x:Class="AdminAlmacen.Vistas.CrudUsuarios"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdminAlmacen.Vistas"
+        mc:Ignorable="d"
+        Title="CrudUsuarios" Height="450" Width="800">
+    <Grid Margin="0,0,0,10" Height="450" Width="800">
+        <Rectangle Height="322" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="345" VerticalAlignment="Top" Margin="300,25,44,0" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Label 
+           BorderBrush="Transparent" Content="Actualizar Usuario" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,25,0,0" Foreground="White" FontSize="28" Width="456" Background="#FF5CEC8E"/>
+        <TextBox x:Name="txt_nombres" materialDesign:HintAssist.Hint="Nombres" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,99,276,294" Cursor="IBeam"/>
+        <TextBox x:Name="txt_apellidos" materialDesign:HintAssist.Hint="Apellidos" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,99,52,294" Cursor="IBeam"/>
+        <TextBox x:Name="txt_cedula" materialDesign:HintAssist.Hint="Cedula" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,161,276,232"/>
+        <TextBox x:Name="txt_correo" materialDesign:HintAssist.Hint="Correo" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,156,64,237"/>
+        <TextBox x:Name="txt_usuario" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,225,276,168"/>
+        <TextBox x:Name="txt_contraseña" materialDesign:HintAssist.Hint="Contraseña" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,225,64,168"/>
+        <Button x:Name="btn_guardar_editar_usuario" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="548,0,0,69" Content="Guardar Cambios" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_guardar_usuario_Click" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btn_cerrar_actualizar" Width="140" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="384,0,0,69" Content="Cancelar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_cerrar_resgitro_Click" Cursor="Hand" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

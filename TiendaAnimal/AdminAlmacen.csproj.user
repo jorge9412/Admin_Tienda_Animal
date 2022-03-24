@@ -13,6 +13,9 @@
     <Compile Update="Vistas\Content_ListaEnvios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vistas\CrudUsuarios.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vistas\envio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistas\Content_ListaEnvios.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\CrudUsuarios.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistas\envio.xaml">
