@@ -6,8 +6,30 @@
         xmlns:local="clr-namespace:AdminAlmacen.Vistas"
         mc:Ignorable="d"
         Title="Borrar" Height="450" Width="800">
-    <Grid>
-        <Label Content="Eliminar" HorizontalAlignment="Left" Margin="310,79,0,0" VerticalAlignment="Top" Height="121" Width="169"/>
+    <Border CornerRadius="5" Background="White">
 
-    </Grid>
+        <Grid>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="80*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Name="txtTitle" Text="¿Seguro desea eliminar este registro?" Grid.Column="1" Foreground="DimGray" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="39" Margin="74,33,208,0"/>
+            </Grid>
+
+
+            <TextBlock Name="txtMessageName" Text="" Foreground="DimGray" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,99,0,0" Width="159"/>
+
+
+
+            <Button Name="btnOk" Content="Eliminar"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"   Background="#FF698EF1" BorderBrush="{x:Null}"  Foreground="White" Height="37" Margin="435,159,0,0" Grid.Row="1"/>
+
+
+            <Button Name="btnCancel" Content="Cancelar" Height="37"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="118"   Background="#FFE60000" BorderBrush="{x:Null}"  Foreground="White" Margin="226,159,0,0" Grid.Row="1"/>
+
+
+        </Grid>
+    </Border>
 </Window>

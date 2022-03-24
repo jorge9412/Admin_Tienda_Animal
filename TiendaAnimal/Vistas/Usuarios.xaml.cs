@@ -87,7 +87,11 @@ namespace AdminAlmacen.Vistas
 
         private void Eliminar(object sender, RoutedEventArgs e)
         {
-
+            int id = (int)((Button)sender).CommandParameter;
+            Borrar borrar = new Borrar();
+            borrar.id_login = id;
+            borrar.Consultar();
+            borrar.Show();
         }
     }
 }
