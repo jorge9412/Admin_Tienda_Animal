@@ -37,7 +37,7 @@
         <TextBox x:Name="txt_correo" materialDesign:HintAssist.Hint="Correo" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,156,64,237"/>
         <TextBox x:Name="txt_usuario" materialDesign:HintAssist.Hint="Usuario" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="324,225,276,168"/>
         <TextBox x:Name="txt_contraseña" materialDesign:HintAssist.Hint="Contraseña" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="548,225,64,168"/>
-        <Button x:Name="btn_guardar_editar_usuario" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="548,0,0,69" Content="Guardar Cambios" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_guardar_usuario_Click" >
+        <Button x:Name="btn_guardar_editar_usuario" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="548,0,0,69" Content="Guardar Cambios" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_actualizar" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -45,7 +45,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btn_cerrar_actualizar" Width="140" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="384,0,0,69" Content="Cancelar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_cerrar_resgitro_Click" Cursor="Hand" >
+        <Button x:Name="btn_cerrar_actualizar" Width="140" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="384,0,0,69" Content="Cancelar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_cerrar" Cursor="Hand" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
