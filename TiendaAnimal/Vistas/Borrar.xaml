@@ -5,30 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdminAlmacen.Vistas"
         mc:Ignorable="d"
-        Title="Borrar" Height="450" Width="800">
+        Title="Borrar" Height="200" Width="600">
     <Border CornerRadius="5" Background="White">
 
         <Grid>
-
-            <Grid Grid.Row="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="20*"/>
-                    <ColumnDefinition Width="80*"/>
-                </Grid.ColumnDefinitions>
-
-                <TextBlock Name="txtTitle" Text="¿Seguro desea eliminar este registro?" Grid.Column="1" Foreground="DimGray" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="39" Margin="74,33,208,0"/>
+            <Grid >
+                <TextBlock Name="txtEliminar" Text="¿Seguro desea eliminar este registro?" Foreground="DimGray" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="37" Margin="130,29,86,0"/>
+                <Label Content="Usuario" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Width="363" Margin="130,62,0,68" FontSize="24"/>
             </Grid>
-
-
-            <TextBlock Name="txtMessageName" Text="" Foreground="DimGray" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,99,0,0" Width="159"/>
-
-
-
-            <Button Name="btnOk" Content="Eliminar"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"   Background="#FF698EF1" BorderBrush="{x:Null}"  Foreground="White" Height="37" Margin="435,159,0,0" Grid.Row="1"/>
-
-
-            <Button Name="btnCancel" Content="Cancelar" Height="37"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="118"   Background="#FFE60000" BorderBrush="{x:Null}"  Foreground="White" Margin="226,159,0,0" Grid.Row="1"/>
-
+            <Button Name="btnOk" Content="Eliminar"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"   Background="#FF698EF1" BorderBrush="{x:Null}"  Foreground="White" Height="37" Margin="150,129,0,0"/>
+            <Button Name="btnCancel" Content="Cancelar" Height="37"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="118"   Background="#FFE60000" BorderBrush="{x:Null}"  Foreground="White" Margin="321,127,0,0"/>
 
         </Grid>
     </Border>

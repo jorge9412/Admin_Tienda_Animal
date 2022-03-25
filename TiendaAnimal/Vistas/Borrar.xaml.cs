@@ -33,7 +33,7 @@ namespace AdminAlmacen.Vistas
             SqlCommand com = new SqlCommand("Select * From LoginUser where id_login=" + id_login, conn);
             SqlDataReader rdr = com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
             rdr.Read();
-            this.txtMessageName.Text = rdr["usuario"].ToString();
+            this.txtEliminar.Text = rdr["usuario"].ToString();
             rdr.Close();
 
         }
