@@ -85,6 +85,5 @@
                Grid.RowSpan="8"
                Grid.ColumnSpan="6"/>
         </Grid>
-
     </Border>
 </UserControl>

@@ -28,7 +28,7 @@ namespace AdminAlmacen.Vistas
             CargarDatos();
         }
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
-        void CargarDatos()
+        public void CargarDatos()
         {
             conn.Open();
             SqlCommand cmd = new SqlCommand("Select id_login, usuario, nombres,apellidos,cedula,correo from LoginUser", conn);

@@ -40,15 +40,33 @@ namespace AdminAlmacen.Vistas
             rdr.Close();
 
         }
-
-        private void btn_cerrar_resgitro_Click(object sender, RoutedEventArgs e)
+        private void btn_actualizar(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                conn.Open();
+                string query = "UPDATE LoginUser SET usuario ='" + txt_usuario.Text + "',contraseña='" + txt_contraseña.Text +
+                    "',nombres='" + txt_nombres.Text + "',apellidos='" + txt_apellidos.Text + "',cedula='" + txt_cedula.Text +
+                    "',correo='" + txt_correo.Text + "' where id_login=" + id_login;
 
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Usuario editado correctamente");
+                conn.Close();
+                Close();
+
+            }
+            catch (Exception ex )
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+            
         }
 
-        private void btn_guardar_usuario_Click(object sender, RoutedEventArgs e)
+        private void btn_cerrar(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
     }
 }
