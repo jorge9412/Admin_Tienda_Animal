@@ -40,6 +40,16 @@ namespace AdminAlmacen.Vistas
             rdr.Close();
 
         }
+
+        public void refresh()
+        {
+            conn.Open();
+            SqlCommand com = new SqlCommand("Select * From LoginUser", conn);
+            SqlDataReader rdr = com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+            rdr.Read();
+            rdr.Close();
+
+        }
         private void btn_actualizar(object sender, RoutedEventArgs e)
         {
             try
@@ -51,6 +61,7 @@ namespace AdminAlmacen.Vistas
 
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.ExecuteNonQuery();
+                this.refresh();
                 MessageBox.Show("Usuario editado correctamente");
                 conn.Close();
                 Close();

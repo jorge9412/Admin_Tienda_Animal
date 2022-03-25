@@ -30,12 +30,49 @@ namespace AdminAlmacen.Vistas
         public void Consultar()
         {
             conn.Open();
-            SqlCommand com = new SqlCommand("Select * From LoginUser where id_login=" + id_login, conn);
+            SqlCommand com = new SqlCommand("Select * From LoginUser WHERE id_login=" + id_login, conn);
             SqlDataReader rdr = com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
             rdr.Read();
             this.txtEliminar.Text = rdr["usuario"].ToString();
             rdr.Close();
 
+        }
+
+        public void refresh()
+        {
+            conn.Open();
+            SqlCommand com = new SqlCommand("Select * From LoginUser", conn);
+            SqlDataReader rdr = com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+            rdr.Read();
+            rdr.Close();
+
+        }
+
+        private void btn_borrar(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                string query = "DELETE LoginUser WHERE id_login=" + id_login;
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Usuario eliminado correctamente");
+                conn.Close();
+                this.refresh();
+                Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
+        }
+
+        private void btn_cerrar(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
 
     }

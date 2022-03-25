@@ -35,6 +35,7 @@ namespace AdminAlmacen.Vistas
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
+            GridDatos.AllowDrop = true;
             GridDatos.ItemsSource = dt.DefaultView;
             conn.Close();
         }
@@ -93,5 +94,6 @@ namespace AdminAlmacen.Vistas
             borrar.Consultar();
             borrar.Show();
         }
+
     }
 }
