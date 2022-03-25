@@ -73,7 +73,8 @@
                 <Image 
                     Width="34"
                     HorizontalAlignment="Center"
-                    Source="/Vistas/add.png" RenderTransformOrigin="1.375,0.566" Height="35"/>
+                    Source="/Vistas/add.png" RenderTransformOrigin="1.375,0.566" Height="35"
+                    ToolTip="Agregar usuario" />
             </Button>
             <Button x:Name="BtnRefrescar"
                     Height="70"
@@ -82,7 +83,8 @@
                     Cursor="Hand"
                     Background="Transparent"
                     BorderBrush="Transparent"
-                    Margin="786,98,0,397" Click="RefrescarClick">
+                    Margin="786,98,0,397" Click="RefrescarClick"
+                   ToolTip="Actualizar" >
                 <Image 
                     Width="34"
                     HorizontalAlignment="Center"
