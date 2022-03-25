@@ -50,7 +50,6 @@ namespace AdminAlmacen.Vistas
         {
             try
             {
-                //SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
                 conn.Open();
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente_Envio WHERE nombre_cliente like ('%" + txt_buscar_envio.Text + "%')or apellido_cliente like ('%" + txt_buscar_envio.Text + "%')" +
                                                 "or cedula_cliente like ('%" + txt_buscar_envio.Text + "%')or cedula_destinatario like ('%" + txt_buscar_envio.Text + "%')" +

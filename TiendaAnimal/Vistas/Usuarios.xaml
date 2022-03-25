@@ -75,9 +75,22 @@
                     HorizontalAlignment="Center"
                     Source="/Vistas/add.png" RenderTransformOrigin="1.375,0.566" Height="35"/>
             </Button>
+            <Button x:Name="BtnrRefrescar"
+                    Height="70"
+                    Width="69"
+                    HorizontalAlignment="Left"
+                    Cursor="Hand"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Margin="786,98,0,397" Click="Refrescar">
+                <Image 
+                    Width="34"
+                    HorizontalAlignment="Center"
+                    Source="/Vistas/Assets/refresh.png" RenderTransformOrigin="1.375,0.566" Height="35"/>
+            </Button>
             <Label Foreground="#FFFFFF" Content="ADMINISTRACION DE USUARIOS" HorizontalAlignment="Left" Margin="210,0,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontStyle="Normal" FontFamily="Adobe Gothic Std B"/>
             <Label x:Name="lbl_buscar_usuario" Foreground="#FFFFFF" Content="Buscar:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontStyle="Normal" FontFamily="Adobe Gothic Std B"/>
-            <TextBox x:Name="txt_buscar" materialDesign:HintAssist.Hint="filtrar" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="138,110,72,402" Cursor="IBeam" TextChanged="txt_buscar_click"/>
+            <TextBox x:Name="txt_buscar" materialDesign:HintAssist.Hint="filtrar" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="138,110,177,402" Cursor="IBeam" TextChanged="txt_buscar_click"/>
             <Frame x:Name="FrameUsuarios"
                Grid.Column="0"
                Grid.Row="0"
