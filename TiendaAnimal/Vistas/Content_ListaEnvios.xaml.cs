@@ -51,9 +51,10 @@ namespace AdminAlmacen.Vistas
             try
             {
                 conn.Open();
+                
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente_Envio WHERE nombre_cliente like ('%" + txt_buscar_envio.Text + "%')or apellido_cliente like ('%" + txt_buscar_envio.Text + "%')" +
                                                 "or cedula_cliente like ('%" + txt_buscar_envio.Text + "%')or cedula_destinatario like ('%" + txt_buscar_envio.Text + "%')" +
-                                                "or fecha_envio like ('%" + txt_buscar_envio.Text + "%')", conn);
+                                                "or descripcion_envio like ('%" + txt_buscar_envio.Text + "%')", conn);
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
