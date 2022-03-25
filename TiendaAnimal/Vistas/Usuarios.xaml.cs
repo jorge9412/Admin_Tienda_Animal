@@ -85,7 +85,6 @@ namespace AdminAlmacen.Vistas
             
       
         }
-
         private void Eliminar(object sender, RoutedEventArgs e)
         {
             int id = (int)((Button)sender).CommandParameter;
@@ -95,5 +94,10 @@ namespace AdminAlmacen.Vistas
             borrar.Show();
         }
 
+        private void RefrescarClick(object sender, RoutedEventArgs e)
+        {
+            CargarDatos();
+            MessageBox.Show("Actualizado con éxito");
+        }
     }
 }

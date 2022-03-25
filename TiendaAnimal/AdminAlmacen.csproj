@@ -20,6 +20,7 @@
     <None Remove="Vistas\minimize.png" />
     <None Remove="Vistas\perfil.png" />
     <None Remove="Vistas\red.png" />
+    <None Remove="Vistas\refresh.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +45,7 @@
     <Resource Include="Vistas\minimize.png" />
     <Resource Include="Vistas\perfil.png" />
     <Resource Include="Vistas\red.png" />
+    <Resource Include="Vistas\refresh.png" />
   </ItemGroup>
 
 </Project>
