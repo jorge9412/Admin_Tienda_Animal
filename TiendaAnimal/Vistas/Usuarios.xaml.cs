@@ -31,7 +31,7 @@ namespace AdminAlmacen.Vistas
         public void CargarDatos()
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("Select id_login, usuario, nombres,apellidos,cedula,correo from LoginUser", conn);
+            SqlCommand cmd = new SqlCommand("Select id_login, usuario, nombres,apellidos,cedula,correo from LoginUser  order by nombres asc", conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -85,7 +85,6 @@ namespace AdminAlmacen.Vistas
             
       
         }
-
         private void Eliminar(object sender, RoutedEventArgs e)
         {
             int id = (int)((Button)sender).CommandParameter;
@@ -95,5 +94,10 @@ namespace AdminAlmacen.Vistas
             borrar.Show();
         }
 
+        private void RefrescarClick(object sender, RoutedEventArgs e)
+        {
+            CargarDatos();
+            MessageBox.Show("Actualizado con éxito");
+        }
     }
 }
