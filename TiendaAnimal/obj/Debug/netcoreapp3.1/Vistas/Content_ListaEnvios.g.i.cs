@@ -96,7 +96,7 @@ namespace AdminAlmacen.Vistas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AdminAlmacen;component/vistas/content_listaenvios.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AdminAlmacen;V1.0.0.0;component/vistas/content_listaenvios.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vistas\Content_ListaEnvios.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
