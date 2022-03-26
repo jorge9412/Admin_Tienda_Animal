@@ -11,14 +11,15 @@
     <None Remove="user.png" />
     <None Remove="Vistas\add.png" />
     <None Remove="Vistas\Admin Envios BLANCO.png" />
+    <None Remove="Vistas\adminEnBlanco.png" />
     <None Remove="Vistas\close.png" />
+    <None Remove="Vistas\close2.png" />
     <None Remove="Vistas\config.png" />
     <None Remove="Vistas\entrega.png" />
-    <None Remove="Vistas\enviar.png" />
+    <None Remove="Vistas\history.jpg" />
     <None Remove="Vistas\home.png" />
     <None Remove="Vistas\info.png" />
-    <None Remove="Vistas\minimize.png" />
-    <None Remove="Vistas\perfil.png" />
+    <None Remove="Vistas\minimizar.png" />
     <None Remove="Vistas\red.png" />
     <None Remove="Vistas\refresh.png" />
   </ItemGroup>
@@ -32,18 +33,18 @@
   <ItemGroup>
     <Resource Include="user.png" />
     <Resource Include="Vistas\add.png" />
-    <Resource Include="Vistas\Assets\face png.png" />
-    <Resource Include="Vistas\Assets\logo_instagram.png" />
+    <Resource Include="Vistas\Admin Envios BLANCO.png" />
+    <Resource Include="Vistas\adminEnBlanco.png" />
     <Resource Include="Vistas\Assets\lovehuella.png" />
-    <Resource Include="Vistas\Assets\Admin Envios BLANCO.png" />
+    <Resource Include="Vistas\Assets\adminEnBlanco.png" />
     <Resource Include="Vistas\close.png" />
+    <Resource Include="Vistas\close2.png" />
     <Resource Include="Vistas\config.png" />
     <Resource Include="Vistas\entrega.png" />
-    <Resource Include="Vistas\enviar.png" />
+    <Resource Include="Vistas\history.jpg" />
     <Resource Include="Vistas\home.png" />
     <Resource Include="Vistas\info.png" />
-    <Resource Include="Vistas\minimize.png" />
-    <Resource Include="Vistas\perfil.png" />
+    <Resource Include="Vistas\minimizar.png" />
     <Resource Include="Vistas\red.png" />
     <Resource Include="Vistas\refresh.png" />
   </ItemGroup>

@@ -71,7 +71,8 @@ namespace AdminAlmacen.Vistas
 
         private void BtnInfo_Click(object sender, RoutedEventArgs e)
         {
-
+            DataContext = new Acercade();
         }
+
     }
 }

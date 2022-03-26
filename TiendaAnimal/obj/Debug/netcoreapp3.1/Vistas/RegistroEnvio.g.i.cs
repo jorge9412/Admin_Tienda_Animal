@@ -192,7 +192,7 @@ namespace AdminAlmacen.Vistas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AdminAlmacen;V1.0.0.0;component/vistas/registroenvio.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AdminAlmacen;component/vistas/registroenvio.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vistas\RegistroEnvio.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

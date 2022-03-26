@@ -177,3 +177,5 @@ C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Anim
 C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\CrudUsuarios.baml
 C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\CrudUsuarios.g.cs
 C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\CrudUsuarios.baml
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Acercade.g.cs
+C:\Users\drojasp\Desktop\Admin_Tienda_Animal\TiendaAnimal\obj\Debug\netcoreapp3.1\Vistas\Acercade.baml

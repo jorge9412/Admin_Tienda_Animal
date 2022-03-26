@@ -117,8 +117,8 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
                             Margin="0,-3,55,0" Click="Minimizar">
-                        <Image Source="/Vistas/minimize.png"                                  
-                                Cursor="Hand"/>
+                        <Image Source="/Vistas/minimizar.png"                                  
+                                Cursor="Hand" Height="59" Width="40"/>
                     </Button>
                     <!--CERRAR-->
                     <Button x:Name="BtnCerrar"
@@ -130,7 +130,7 @@
                             HorizontalAlignment="Right"
                             VerticalAlignment="Top"
                             Margin="0,5,5,0" Click="Cerrar">
-                        <Image Source="/Vistas/close.png"                                  
+                        <Image Source="/Vistas/close2.png"                                  
                                 Cursor="Hand"/>
                     </Button>
                 </Grid>
@@ -157,7 +157,7 @@
                 <Border CornerRadius="0,0,0,10"
                         Opacity="0.9"
                         Background="White" PreviewMouseLeftButtonDown="PreviewMouseLeftBotton" Grid.RowSpan="2" Grid.ColumnSpan="5" Margin="3,0,-3,0">
-                    <Image Name="img_logo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="738" Source="/Vistas/Assets/Admin Envios BLANCO.png" Margin="138,84,0,0"/>
+                    <Image Name="img_logo" HorizontalAlignment="Left" VerticalAlignment="Top" Width="738" Source="/Vistas/adminEnBlanco.png" Margin="138,84,0,0" Height="362"/>
                 </Border>
                 <ContentControl Content="{Binding}" Grid.RowSpan="2" Grid.ColumnSpan="5" HorizontalAlignment="Center"/>
 
@@ -222,10 +222,10 @@
                                     <BeginStoryboard>
                                         <Storyboard x:Name="ShowPanel">
                                             <DoubleAnimation Storyboard.TargetName="GridMenu"
-                                                             Storyboard.TargetProperty="Width"
-                                                             BeginTime="0:0:0"
-                                                             From="75" To="200"
-                                                             Duration="0:0:0:0.5"/>
+                                                Storyboard.TargetProperty="Width"
+                                                BeginTime="0:0:0"
+                                                From="75" To="200"
+                                                Duration="0:0:0:0.5"/>
                                         </Storyboard>
                                     </BeginStoryboard>
                                 </EventTrigger>
@@ -235,7 +235,7 @@
                     <!--LISTA REGION-->
                     <ListView Background="Transparent"
                               BorderBrush="Transparent"
-                              Margin="0,30,0,0"
+                              Margin="0,10,0,0"
                               ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
                         <!--LIST INICIO-->
@@ -293,13 +293,13 @@
                                            HorizontalAlignment="Center"
                                            Source="/Vistas/entrega.png" Height="44" VerticalAlignment="Top"
                                            ToolTip="Envios" />
-                                    <TextBlock Grid.Column="1"
-                                               Text="Envios"
-                                               
-                                               FontWeight="SemiBold"
-                                               FontSize="15"
-                                               VerticalAlignment="Center"
-                                               HorizontalAlignment="Center"/>
+                                    <TextBlock 
+                                        Grid.Column="1"
+                                        Text="Envios"
+                                        FontWeight="SemiBold"
+                                        FontSize="15"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center" Height="36" Width="120" />
                                 </Grid>
                             </Button>
                         </ListViewItem>

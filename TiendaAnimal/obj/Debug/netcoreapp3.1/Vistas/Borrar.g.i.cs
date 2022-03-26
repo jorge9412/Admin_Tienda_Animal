@@ -61,7 +61,7 @@ namespace AdminAlmacen.Vistas {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AdminAlmacen;V1.0.0.0;component/vistas/borrar.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AdminAlmacen;component/vistas/borrar.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Vistas\Borrar.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

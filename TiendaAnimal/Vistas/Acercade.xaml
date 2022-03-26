@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="AdminAlmacen.Vistas.Acercade"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AdminAlmacen.Vistas"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Rectangle Height="500" VerticalAlignment="Center">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF04294D"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                    <GradientStop Color="#FF5CEC8E" Offset="1"/>
+                </LinearGradientBrush>
+
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle Height="430" VerticalAlignment="Center" Margin="174,0,12,0" RadiusY="10" RadiusX="10" Fill="White">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+
+        </Rectangle>
+
+        <Label x:Name="Home1" 
+           BorderBrush="Transparent" Content="Misión" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,225,0,0" Foreground="White" FontSize="28" Width="99" Background="#FF5CEC8E" FontStyle="Normal" FontWeight="Bold" FontStretch="SemiCondensed"/>
+        <Label x:Name="Home1_Copy" 
+            BorderBrush="Transparent" Content="Visión" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="584,225,0,0" Foreground="White" FontSize="28" Width="99" Background="#FF5CEC8E" FontStyle="Normal" FontWeight="Bold" FontStretch="SemiCondensed" RenderTransformOrigin="0.578,-0.218"/>
+        <Image HorizontalAlignment="Left" Height="182" Margin="170,31,0,0" VerticalAlignment="Top" Width="299" Source="/Vistas/Admin Envios BLANCO.png"/>
+        <Image HorizontalAlignment="Left" Height="171" Margin="502,31,0,0" VerticalAlignment="Top" Width="272" Source="/Vistas/history.jpg"/>
+        <Image HorizontalAlignment="Left" Height="123" Margin="189,294,0,0" VerticalAlignment="Top" Width="250" Source="/Vistas/history.jpg"/>
+        <Image HorizontalAlignment="Left" Height="123" Margin="502,298,0,0" VerticalAlignment="Top" Width="258" Source="/Vistas/history.jpg"/>
+
+    </Grid>
+</UserControl>
