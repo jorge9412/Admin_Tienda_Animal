@@ -15,6 +15,8 @@
     <None Remove="Vistas\close.png" />
     <None Remove="Vistas\close2.png" />
     <None Remove="Vistas\config.png" />
+    <None Remove="Vistas\editar.png" />
+    <None Remove="Vistas\eliminar.png" />
     <None Remove="Vistas\entrega.png" />
     <None Remove="Vistas\history.jpg" />
     <None Remove="Vistas\home.png" />
@@ -40,6 +42,8 @@
     <Resource Include="Vistas\close.png" />
     <Resource Include="Vistas\close2.png" />
     <Resource Include="Vistas\config.png" />
+    <Resource Include="Vistas\editar.png" />
+    <Resource Include="Vistas\eliminar.png" />
     <Resource Include="Vistas\entrega.png" />
     <Resource Include="Vistas\history.jpg" />
     <Resource Include="Vistas\home.png" />
