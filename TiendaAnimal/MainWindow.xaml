@@ -34,9 +34,9 @@
                 <DropShadowEffect BlurRadius="20" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
             </Rectangle.Effect>
         </Rectangle>
-        <Image HorizontalAlignment="Left" Height="49" Margin="478,59,0,0" VerticalAlignment="Top" Width="49" Source="/user.png"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="461,82,0,0" VerticalAlignment="Top" Width="49" Source="/user.png"/>
 
-        <Label Content="Iniciar sesion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="446,128,0,0" Foreground="Gray" FontSize="18"/>
+        <Label Content="Iniciar sesion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="429,131,0,0" Foreground="Gray" FontSize="18"/>
 
         <TextBox Name="txt_user" CaretBrush="#FF04294D" 
                  materialDesign:HintAssist.Foreground="#FF04294D"
