@@ -43,7 +43,7 @@
                                             Click="Editar"      
                                             CommandParameter="{Binding id_login}">
                                         <DockPanel>
-                                            <Image Source="/Vistas/refresh.png" ToolTip="Editar" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            <Image Source="/Vistas/editar.png" ToolTip="Editar" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                         </DockPanel>
 
                                     </Button>
@@ -56,7 +56,7 @@
                                             Click="Eliminar"
                                             CommandParameter="{Binding id_login}">
                                         <DockPanel>
-                                            <Image Source="/Vistas/refresh.png" ToolTip="Eliminar" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            <Image Source="/Vistas/eliminar.png" ToolTip="Eliminar" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                         </DockPanel>
                                     </Button>
                                 </DockPanel>

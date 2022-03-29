@@ -29,28 +29,37 @@ namespace TiendaAnimal.Vistas
         }       
         private void btn_guardar_usuario_Click(object sender, RoutedEventArgs e)
         {
-            try
+            if (txt_usuario.Text == string.Empty || txt_contraseña.Text == string.Empty ||
+                txt_nombres.Text == string.Empty || txt_apellidos.Text == string.Empty ||
+                txt_cedula.Text == string.Empty || txt_correo.Text == string.Empty)
             {
-                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
-                string query = "INSERT INTO LoginUser(usuario,contraseña,nombres,apellidos,cedula,correo) " +
-                    "VALUES('" + txt_usuario.Text + "','" + txt_contraseña.Text + "','" + txt_nombres.Text + "','" + 
-                                 txt_apellidos.Text + "','" + txt_cedula.Text + "','" + txt_correo.Text + "')";
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Usuario creado correctamente");
-                conn.Close();
-                Usuarios user = new Usuarios();
-                user.CargarDatos();                              
-                LimpiarCampos();
-
+                MessageBox.Show("Debes llenar los campos");
             }
-            catch (Exception ex)
+            else
             {
+                try
 
-                MessageBox.Show(ex.ToString());
-            }            
+                {
+                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
+                    string query = "INSERT INTO LoginUser(usuario,contraseña,nombres,apellidos,cedula,correo) " +
+                        "VALUES('" + txt_usuario.Text + "','" + txt_contraseña.Text + "','" + txt_nombres.Text + "','" +
+                                     txt_apellidos.Text + "','" + txt_cedula.Text + "','" + txt_correo.Text + "')";
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Usuario creado correctamente");
+                    conn.Close();
+                    Usuarios user = new Usuarios();
+                    user.CargarDatos();
+                    LimpiarCampos();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.ToString());
+                }
+            }
         }
         public void LimpiarCampos()
         {

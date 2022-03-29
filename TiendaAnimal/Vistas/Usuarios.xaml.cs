@@ -96,11 +96,5 @@ namespace AdminAlmacen.Vistas
             borrar.ShowDialog();
             CargarDatos();
         }
-
-        private void RefrescarClick(object sender, RoutedEventArgs e)
-        {
-            CargarDatos();
-            MessageBox.Show("Actualizado con éxito");
-        }
     }
 }
