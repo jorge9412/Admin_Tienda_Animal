@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using AdminAlmacen.Vistas;
+
 namespace TiendaAnimal.Vistas
 {
     /// <summary>
@@ -39,6 +41,8 @@ namespace TiendaAnimal.Vistas
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Usuario creado correctamente");
                 conn.Close();
+                Usuarios user = new Usuarios();
+                user.CargarDatos();                              
                 LimpiarCampos();
 
             }
@@ -56,6 +60,7 @@ namespace TiendaAnimal.Vistas
             txt_correo.Text = "";
             txt_usuario.Text = "";
             txt_cedula.Text = "";
+            txt_contraseña.Text = "";
         }
 
         private void btn_cerrar_resgitro_Click(object sender, RoutedEventArgs e)

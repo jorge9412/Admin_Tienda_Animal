@@ -43,7 +43,8 @@ namespace AdminAlmacen.Vistas
         private void irRegistroClik(object sender, RoutedEventArgs e)
         {            
             Registrar general = new Registrar();
-            general.Show();
+            general.ShowDialog();
+            CargarDatos();
         }
 
         private void txt_buscar_click(object sender, TextChangedEventArgs e)
@@ -75,7 +76,8 @@ namespace AdminAlmacen.Vistas
                 CrudUsuarios ventana = new CrudUsuarios();
                 ventana.id_login = id;
                 ventana.Consultar();
-                ventana.Show();
+                ventana.ShowDialog();
+                CargarDatos();
                 //FrameUsuarios.= ventana;
             }
             catch (Exception ex)
@@ -91,7 +93,8 @@ namespace AdminAlmacen.Vistas
             Borrar borrar = new Borrar();
             borrar.id_login = id;
             borrar.Consultar();
-            borrar.Show();
+            borrar.ShowDialog();
+            CargarDatos();
         }
 
         private void RefrescarClick(object sender, RoutedEventArgs e)

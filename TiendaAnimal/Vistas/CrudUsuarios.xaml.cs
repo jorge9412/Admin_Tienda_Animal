@@ -53,6 +53,8 @@ namespace AdminAlmacen.Vistas
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Usuario editado correctamente");
                 conn.Close();
+                Usuarios user = new Usuarios();
+                user.CargarDatos();
                 Close();
 
             }
