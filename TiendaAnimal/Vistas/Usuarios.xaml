@@ -28,7 +28,9 @@
             <!--REGION COLUMNS & ROWS-->
             <DataGrid Margin="10,168,10,43" 
                       AutoGenerateColumns="False"
-                      x:Name="GridDatos">
+                      x:Name="GridDatos"
+                      Background="LightGray" RowBackground="LightYellow" AlternatingRowBackground="LightBlue"
+                      >
                 <DataGrid.Columns>
                     <DataGridTemplateColumn Header="Opcion admin" Width="125">
                         <DataGridTemplateColumn.CellTemplate>
