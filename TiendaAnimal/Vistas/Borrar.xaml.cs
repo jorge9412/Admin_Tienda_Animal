@@ -33,17 +33,7 @@ namespace AdminAlmacen.Vistas
             SqlCommand com = new SqlCommand("Select * From LoginUser WHERE id_login=" + id_login, conn);
             SqlDataReader rdr = com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
             rdr.Read();
-            this.txtEliminar.Text = rdr["usuario"].ToString();
-            rdr.Close();
-
-        }
-
-        public void refresh()
-        {
-            conn.Open();
-            SqlCommand com = new SqlCommand("Select * From LoginUser", conn);
-            SqlDataReader rdr = com.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
-            rdr.Read();
+            this.lblEliminar.Content = rdr["usuario"].ToString();
             rdr.Close();
 
         }
@@ -58,7 +48,6 @@ namespace AdminAlmacen.Vistas
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Usuario eliminado correctamente");
                 conn.Close();
-                this.refresh();
                 Close();
 
             }

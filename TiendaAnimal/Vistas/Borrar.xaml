@@ -5,14 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdminAlmacen.Vistas"
         mc:Ignorable="d"
-        Title="Borrar" Height="200" Width="600">
-    <Grid>
-        <Grid >
-            <TextBlock Name="txtEliminar" Text="¿Seguro desea eliminar este registro?" Foreground="DimGray" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="37" Margin="130,29,86,0"/>
-            <Label Content="Usuario" HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Width="363" Margin="130,62,0,68" FontSize="24"/>
+        Title="Borrar" 
+        Height="300" 
+        Width="400"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF04294D"/>
+            <GradientStop Color="#FF5CEC8E" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid VerticalAlignment="Center" Height="200" Width="400">
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Center" Height="200" Width="400">
+            <Label Content="¿Eliminar "  HorizontalAlignment="Center" VerticalAlignment="Top"  Name="lblEliminar" Foreground="White" FontSize="35" FontWeight="Bold" Margin="0,40,0,0"/>
+            <Label Foreground="White" Content="Quieres eliminar al usuario"  VerticalAlignment="Top" HorizontalContentAlignment="Center"  HorizontalAlignment="Center" Width="400" FontSize="25"/>
+            <Grid Width="90" Height="100" VerticalAlignment="Bottom">
+                <Button Click="btn_borrar" Content="Eliminar" VerticalAlignment="Center"  Background="#FF698EF1" BorderBrush="{x:Null}"  Foreground="White"/>
+                <Button Click="btn_cerrar" Content="Cancelar" VerticalAlignment="Bottom"   Background="#FFE60000" BorderBrush="{x:Null}"  Foreground="White" Cursor="Hand"/>
+            </Grid>
+
         </Grid>
-        <Button Click="btn_borrar" Content="Eliminar"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"   Background="#FF698EF1" BorderBrush="{x:Null}"  Foreground="White" Height="37" Margin="150,129,0,0"/>
-        <Button Click="btn_cerrar" Content="Cancelar" Height="37"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="118"   Background="#FFE60000" BorderBrush="{x:Null}"  Foreground="White" Margin="321,127,0,0"/>
+        <Grid VerticalAlignment ="Center" HorizontalAlignment="Center">
+
+        </Grid>
+
 
     </Grid>
 </Window>

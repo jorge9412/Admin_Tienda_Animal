@@ -26,7 +26,11 @@ namespace TiendaAnimal.Vistas
         public Registrar()
         {
             InitializeComponent();
-        }       
+        }
+       
+        
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
+
         private void btn_guardar_usuario_Click(object sender, RoutedEventArgs e)
         {
             if (txt_usuario.Text == string.Empty || txt_contraseña.Text == string.Empty ||
@@ -40,10 +44,9 @@ namespace TiendaAnimal.Vistas
                 try
 
                 {
-                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
                     string query = "INSERT INTO LoginUser(usuario,contraseña,nombres,apellidos,cedula,correo) " +
                         "VALUES('" + txt_usuario.Text + "','" + txt_contraseña.Text + "','" + txt_nombres.Text + "','" +
-                                     txt_apellidos.Text + "','" + txt_cedula.Text + "','" + txt_correo.Text + "')";
+                                        txt_apellidos.Text + "','" + txt_cedula.Text + "','" + txt_correo.Text + "')";
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -58,7 +61,7 @@ namespace TiendaAnimal.Vistas
                 {
 
                     MessageBox.Show(ex.ToString());
-                }
+                }                                
             }
         }
         public void LimpiarCampos()
@@ -76,6 +79,5 @@ namespace TiendaAnimal.Vistas
         {
             Close();           
         }
-
     }
 }

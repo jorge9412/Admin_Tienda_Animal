@@ -37,7 +37,7 @@ namespace AdminAlmacen.Vistas
             da.Fill(dt);
             GridDatos.AllowDrop = true;
             GridDatos.ItemsSource = dt.DefaultView;
-            conn.Close();
+            conn.Close();            
         }
 
         private void irRegistroClik(object sender, RoutedEventArgs e)
