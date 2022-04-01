@@ -74,5 +74,9 @@ namespace AdminAlmacen.Vistas
             DataContext = new Acercade();
         }
 
+        private void BtnInicio_Click(object sender, RoutedEventArgs e)
+        {
+            DataContext = new home1();
+        }
     }
 }

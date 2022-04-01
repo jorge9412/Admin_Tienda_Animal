@@ -247,7 +247,7 @@
                                     Cursor="Hand"
                                     Background="Transparent"
                                     BorderBrush="Transparent"
-                                    Margin="-20,0,0,0">
+                                    Margin="-20,0,0,0" Click="BtnInicio_Click">
 
                                 <Grid Width="200">
                                     <Grid.RowDefinitions>
