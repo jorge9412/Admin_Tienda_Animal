@@ -19,6 +19,9 @@
     <Compile Update="Vistas\envio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Vistas\home1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Vistas\Registrar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -26,6 +29,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Vistas\Usuarios.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Window1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -45,6 +51,9 @@
     <Page Update="Vistas\envio.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Vistas\home1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Vistas\Registrar.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -52,6 +61,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistas\Usuarios.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Window1.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

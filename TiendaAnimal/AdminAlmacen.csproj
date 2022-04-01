@@ -22,6 +22,8 @@
     <None Remove="Vistas\home.png" />
     <None Remove="Vistas\info.png" />
     <None Remove="Vistas\minimizar.png" />
+    <None Remove="Vistas\precio ciudadess.PNG" />
+    <None Remove="Vistas\precios-definitivo.PNG" />
     <None Remove="Vistas\red.png" />
     <None Remove="Vistas\refresh.png" />
   </ItemGroup>
@@ -49,6 +51,8 @@
     <Resource Include="Vistas\home.png" />
     <Resource Include="Vistas\info.png" />
     <Resource Include="Vistas\minimizar.png" />
+    <Resource Include="Vistas\precio ciudadess.PNG" />
+    <Resource Include="Vistas\precios-definitivo.PNG" />
     <Resource Include="Vistas\red.png" />
     <Resource Include="Vistas\refresh.png" />
   </ItemGroup>
