@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AdminAlmacen.Vistas;
+using System.Data;
 
 namespace TiendaAnimal.Vistas
 {
@@ -30,7 +31,7 @@ namespace TiendaAnimal.Vistas
        
         
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
-
+        
         private void btn_guardar_usuario_Click(object sender, RoutedEventArgs e)
         {
             if (txt_usuario.Text == string.Empty || txt_contraseña.Text == string.Empty ||
@@ -41,27 +42,36 @@ namespace TiendaAnimal.Vistas
             }
             else
             {
-                try
-
+                bool existe = ExisteUsuario();
+                if (existe == true)
                 {
-                    string query = "INSERT INTO LoginUser(usuario,contraseña,nombres,apellidos,cedula,correo) " +
-                        "VALUES('" + txt_usuario.Text + "','" + txt_contraseña.Text + "','" + txt_nombres.Text + "','" +
-                                        txt_apellidos.Text + "','" + txt_cedula.Text + "','" + txt_correo.Text + "')";
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Usuario creado correctamente");
+                    MessageBox.Show("Ya existe un usuario con ese nombre");
                     conn.Close();
-                    Usuarios user = new Usuarios();
-                    user.CargarDatos();
-                    LimpiarCampos();
                 }
-                catch (Exception ex)
+                else
                 {
+                    try
+                    {
+                        string query = "INSERT INTO LoginUser(usuario,contraseña,nombres,apellidos,cedula,correo) " +
+                            "VALUES('" + txt_usuario.Text + "','" + txt_contraseña.Text + "','" + txt_nombres.Text + "','" +
+                                            txt_apellidos.Text + "','" + txt_cedula.Text + "','" + txt_correo.Text + "')";
+                        //conn.Open();
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Usuario creado correctamente");
+                        conn.Close();
+                        Usuarios user = new Usuarios();
+                        user.CargarDatos();
+                        LimpiarCampos();
+                    }
+                    catch (Exception ex)
+                    {
 
-                    MessageBox.Show(ex.ToString());
-                }                                
+                        MessageBox.Show(ex.ToString());
+                    }
+                }
+                                               
             }
         }
         public void LimpiarCampos()
@@ -78,6 +88,27 @@ namespace TiendaAnimal.Vistas
         private void btn_cerrar_resgitro_Click(object sender, RoutedEventArgs e)
         {
             Close();           
+        }
+        public bool ExisteUsuario()
+        {
+            bool existe = false;
+            conn.Open();
+            string query = "select COUNT(*) from LoginUser where usuario= @usuario or cedula= @cedula";
+            SqlCommand consulta = new SqlCommand(query, conn);
+            consulta.Parameters.AddWithValue("@usuario", txt_usuario.Text);
+            consulta.Parameters.AddWithValue("@cedula", txt_cedula.Text);
+
+            int count = Convert.ToInt32(consulta.ExecuteScalar());
+            if (count >0)
+            {
+                existe = true;
+            }
+            else
+            {
+                existe = false;
+            }
+
+            return existe;
         }
     }
 }
