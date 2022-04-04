@@ -32,13 +32,15 @@ namespace AdminAlmacen.Vistas
         {
             conn.Open();
             SqlCommand cmd = new SqlCommand("Select nombre_cliente, apellido_cliente,cedula_cliente" +
-                                            ",cedula_destinatario,nombres_destinatario," +
+                                            ",celular_cliente,nombres_destinatario,fecha_pedido," +
                                             "direccion_destinatario ,ciudad_destino, descripcion_envio, precio_envio from Cliente_Envio", conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
+            GridDatosEnvios.AllowDrop = true;
             GridDatosEnvios.ItemsSource = dt.DefaultView;
             conn.Close();
+
         }
 
         private void irRegistroEnvioClik(object sender, RoutedEventArgs e)
@@ -55,6 +57,7 @@ namespace AdminAlmacen.Vistas
                 SqlCommand cmd = new SqlCommand("SELECT * FROM Cliente_Envio WHERE nombre_cliente like ('%" + txt_buscar_envio.Text + "%')or apellido_cliente like ('%" + txt_buscar_envio.Text + "%')" +
                                                 "or cedula_cliente like ('%" + txt_buscar_envio.Text + "%')or cedula_destinatario like ('%" + txt_buscar_envio.Text + "%')" +
                                                 "or descripcion_envio like ('%" + txt_buscar_envio.Text + "%')", conn);
+
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
@@ -65,6 +68,17 @@ namespace AdminAlmacen.Vistas
             {
                 MessageBox.Show("Sin datos");
             }
+        }
+
+        private void Eliminar(object sender, RoutedEventArgs e)
+        {
+            DateTime fecha = DateTime.Now;
+            MessageBox.Show(fecha.ToString());
+        }
+
+        private void Editar(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

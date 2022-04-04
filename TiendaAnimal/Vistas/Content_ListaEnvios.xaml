@@ -27,18 +27,54 @@
             <!--REGION COLUMNS & ROWS-->
             <DataGrid Margin="10,168,10,43" 
                       AutoGenerateColumns="False"
+                      CanUserAddRows="False"
+                      Background="LightGray" RowBackground="White" AlternatingRowBackground="LightBlue"
                       x:Name="GridDatosEnvios">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Width="80" Header="Fecha envio" IsReadOnly="True" Binding="{Binding fecha_envio}"/>
+                    <DataGridTextColumn Width="80" Header="Fecha envio" IsReadOnly="True" Binding="{Binding fecha_pedido}"/>
                     <DataGridTextColumn Width="110" Header="Descripcion" IsReadOnly="True" Binding="{Binding descripcion_envio}"/>
                     <DataGridTextColumn Width="75" Header="Precio" IsReadOnly="True" Binding="{Binding precio_envio}"/>
                     <DataGridTextColumn Width="80" Header="Cedula" IsReadOnly="True" Binding="{Binding cedula_cliente}"/>
                     <DataGridTextColumn Width="80" Header="Envía" IsReadOnly="True" Binding="{Binding nombre_cliente}"/>
                     <DataGridTextColumn Width="80" Header="Apellido" IsReadOnly="True" Binding="{Binding apellido_cliente}"/>
-                    <DataGridTextColumn Width="80" Header="Cedula Destinat." IsReadOnly="True" Binding="{Binding cedula_destinatario}"/>
+                    <DataGridTextColumn Width="80" Header="Celular" IsReadOnly="True" Binding="{Binding celular_cliente}"/>
                     <DataGridTextColumn Width="110" Header="Recibe" IsReadOnly="True" Binding="{Binding nombres_destinatario}"/>
                     <DataGridTextColumn Width="130" Header="Direccion Envio" IsReadOnly="True" Binding="{Binding direccion_destinatario}"/>
                     <DataGridTextColumn Width="100" Header="Destino" IsReadOnly="True" Binding="{Binding ciudad_destino}"/>
+                    <DataGridTemplateColumn Header="Opcion admin" Width="125">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <DockPanel>
+                                    <Button
+                                            Name="btnEditar"
+                                            Background="#FF04294D"
+                                            Width="45"
+                                            BorderBrush="Transparent"
+                                            Foreground="White" 
+                                            Click="Editar"      
+                                            CommandParameter="{Binding id_login}">
+                                        <DockPanel>
+                                            <Image Source="/Vistas/editar.png" ToolTip="Editar" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </DockPanel>
+
+                                    </Button>
+                                    <Button 
+                                            Name="btnEliminar"
+                                            Background="#EC4134"
+                                            Width="45"
+                                            BorderBrush="Transparent"
+                                            Foreground="White"   
+                                            Click="Eliminar"
+                                            CommandParameter="{Binding id_login}">
+                                        <DockPanel>
+                                            <Image Source="/Vistas/eliminar.png" ToolTip="Eliminar"/>
+                                        </DockPanel>
+                                    </Button>
+                                </DockPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                
                 </DataGrid.Columns>
             </DataGrid>
             <Button x:Name="BtnRegistrarEnvio"
@@ -52,18 +88,19 @@
                 <Image 
                     Width="34"
                     Grid.Column="0"
-                    HorizontalAlignment="Center"
+                    HorizontalAlignment="Left"
                     Source="/Vistas/add.png" RenderTransformOrigin="0.535,1.509"/>
             </Button>
             <Label  Foreground="#FFFFFF" Content="LISTA DE ENVIOS" HorizontalAlignment="Left" Margin="333,10,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontStyle="Normal" FontFamily="Adobe Gothic Std B"/>
             <Label x:Name="lbl_buscar_envio" Foreground="#FFFFFF" Content="Buscar:" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontStyle="Normal" FontFamily="Adobe Gothic Std B"/>
             <TextBox x:Name="txt_buscar_envio" 
-                     CaretBrush="#FFFFFF" 
-                     materialDesign:HintAssist.Foreground="#FFFFFF"
-                     materialDesign:TextFieldAssist.UnderlineBrush="#FFFFFF" 
-                     materialDesign:HintAssist.Hint="filtrar" 
-                     Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
-                     FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="81,110,81,413" Cursor="IBeam" TextChanged="txt_buscar_envio_click"/>
+            CaretBrush="#FFFFFF" 
+            materialDesign:TextFieldAssist.UnderlineBrush="#FFFFFF" 
+            materialDesign:HintAssist.Hint="filtrar" 
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+            FontFamily="Champagne &amp; Limousines" 
+            FontSize="18" Margin="94,110,77,413" Cursor="IBeam" 
+            TextChanged="txt_buscar_envio_click"/>
 
         </Grid>
     </Border>

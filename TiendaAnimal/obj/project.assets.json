@@ -535,19 +535,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\USUARIO\\.nuget\\packages\\": {}
+    "C:\\Users\\drojasp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\AdminAlmacen.csproj",
+      "projectUniqueName": "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\AdminAlmacen.csproj",
       "projectName": "AdminAlmacen",
-      "projectPath": "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\AdminAlmacen.csproj",
-      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USUARIO\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\obj\\",
+      "projectPath": "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\AdminAlmacen.csproj",
+      "packagesPath": "C:\\Users\\drojasp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\drojasp\\Desktop\\Admin_Tienda_Animal\\TiendaAnimal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\drojasp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -604,7 +604,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

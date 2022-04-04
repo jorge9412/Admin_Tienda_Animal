@@ -22,6 +22,8 @@ namespace AdminAlmacen.Vistas
         public RegistroEnvio()
         {
             InitializeComponent();
+            DateTime fecha = DateTime.Now;
+            txt_fecha.Text = fecha.ToString();
         }
 
         private void btn_guardar_envio_Click(object sender, RoutedEventArgs e)
@@ -32,17 +34,18 @@ namespace AdminAlmacen.Vistas
             {
                 try
                 {
+                    DateTime fecha = DateTime.Now;
                     SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
-                    string query = "INSERT INTO Cliente_Envio(nombre_cliente,apellido_cliente,cedula_cliente,celular_cliente,correo_cliente,direccion_cliente,nombres_destinatario,direccion_destinatario,ciudad_destino,descripcion_envio,ciudad_origen_envio,precio_envio,cedula_destinatario) " +
+                    string query = "INSERT INTO Cliente_Envio(nombre_cliente,apellido_cliente,cedula_cliente,celular_cliente,correo_cliente,direccion_cliente,nombres_destinatario,direccion_destinatario,ciudad_destino,descripcion_envio,ciudad_origen_envio,precio_envio,fecha_pedido) " +
                         "VALUES('" + txt_nombre_cliente.Text + "','" + txt_apellidos_cliente.Text + "','" + txt_cedula_cliente.Text + "','" + 
                         txt_celular_cliente.Text + "','"+ txt_correo_cliente.Text + "','" + txt_direccion_cliente.Text + "','" + txt_nombre_destinatario.Text + 
                         "','" + txt_direccion_destinatario.Text + "','" + txt_ciudad_destino.Text + "','" + txt_descripcion_envio.Text + "','" + 
-                        txt_ciudad_origen_envio.Text + "','" + txt_precio_envio.Text + "','" + txt_cedula_destinatario.Text + "')";
+                        txt_ciudad_origen_envio.Text + "','" + txt_precio_envio.Text + "','" + fecha + "')";
                     conn.Open();
                     SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Usuario creado correctamente");
+                    MessageBox.Show("Envio creado correctamente");
                     conn.Close();
                     LimpiarCampos();
                 }
@@ -75,7 +78,6 @@ namespace AdminAlmacen.Vistas
             txt_ciudad_destino.Text = "";
             txt_ciudad_origen_envio.Text = "";
             txt_precio_envio.Text = "";
-            txt_cedula_destinatario.Text = "";
             txt_descripcion_envio.Text = "";
         }
         public bool validarCampos()
@@ -83,7 +85,7 @@ namespace AdminAlmacen.Vistas
             bool validar;
             if (txt_nombre_cliente.Text == string.Empty || txt_apellidos_cliente.Text == string.Empty || txt_cedula_cliente.Text == string.Empty || txt_celular_cliente.Text == string.Empty ||
                 txt_correo_cliente.Text == string.Empty || txt_direccion_cliente.Text == string.Empty || txt_nombre_destinatario.Text == string.Empty || txt_direccion_destinatario.Text == string.Empty ||
-                txt_ciudad_destino.Text == string.Empty || txt_descripcion_envio.Text == string.Empty || txt_ciudad_origen_envio.Text == string.Empty || txt_precio_envio.Text == string.Empty || txt_cedula_destinatario.Text == string.Empty)
+                txt_ciudad_destino.Text == string.Empty || txt_descripcion_envio.Text == string.Empty || txt_ciudad_origen_envio.Text == string.Empty || txt_precio_envio.Text == string.Empty || txt_fecha.Text == string.Empty)
             {
                 validar = false;
             }
