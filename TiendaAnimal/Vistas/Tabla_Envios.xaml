@@ -52,7 +52,7 @@
                                             BorderBrush="Transparent"
                                             Foreground="White" 
                                             Click="Editar"      
-                                            CommandParameter="{Binding id_login}">
+                                            CommandParameter="{Binding id_envio}">
                                         <DockPanel>
                                             <Image Source="/Vistas/editar.png" ToolTip="Editar" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                                         </DockPanel>
@@ -65,7 +65,7 @@
                                             BorderBrush="Transparent"
                                             Foreground="White"   
                                             Click="Eliminar"
-                                            CommandParameter="{Binding id_login}">
+                                            CommandParameter="{Binding id_envio}">
                                         <DockPanel>
                                             <Image Source="/Vistas/eliminar.png" ToolTip="Eliminar"/>
                                         </DockPanel>

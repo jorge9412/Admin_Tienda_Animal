@@ -10,28 +10,34 @@
     <Compile Update="Vistas\Borrar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Vistas\Content_ListaEnvios.xaml.cs">
+    <Compile Update="Vistas\BorrrarListaEnvio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Vistas\CrudUsuarios.xaml.cs">
+    <Compile Update="Vistas\EditarEnvio.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Tabla_Envios.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\EditarUsuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Vistas\envio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Vistas\home1.xaml.cs">
+    <Compile Update="Vistas\Inicio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Vistas\Registrar.xaml.cs">
+    <Compile Update="Vistas\RegistroUsuario.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Vistas\RegistroEnvio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Vistas\Usuarios.xaml.cs">
+    <Compile Update="Vistas\TablaUsuarios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Vistas\Window1.xaml.cs">
+    <Compile Update="Vistas\ListaPrecios.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -42,28 +48,34 @@
     <Page Update="Vistas\Borrar.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\Content_ListaEnvios.xaml">
+    <Page Update="Vistas\BorrrarListaEnvio.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\CrudUsuarios.xaml">
+    <Page Update="Vistas\EditarEnvio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Tabla_Envios.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\EditarUsuario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistas\envio.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\home1.xaml">
+    <Page Update="Vistas\Inicio.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\Registrar.xaml">
+    <Page Update="Vistas\RegistroUsuario.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Vistas\RegistroEnvio.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\Usuarios.xaml">
+    <Page Update="Vistas\TablaUsuarios.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Vistas\Window1.xaml">
+    <Page Update="Vistas\ListaPrecios.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

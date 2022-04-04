@@ -31,7 +31,7 @@ namespace AdminAlmacen.Vistas
         void CargarDatosEnvios()
         {
             conn.Open();
-            SqlCommand cmd = new SqlCommand("Select nombre_cliente, apellido_cliente,cedula_cliente" +
+            SqlCommand cmd = new SqlCommand("Select id_envio,nombre_cliente, apellido_cliente,cedula_cliente" +
                                             ",celular_cliente,nombres_destinatario,fecha_pedido," +
                                             "direccion_destinatario ,ciudad_destino, descripcion_envio, precio_envio from Cliente_Envio", conn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -72,12 +72,24 @@ namespace AdminAlmacen.Vistas
 
         private void Eliminar(object sender, RoutedEventArgs e)
         {
-            DateTime fecha = DateTime.Now;
-            MessageBox.Show(fecha.ToString());
+
+            int id = (int)((Button)sender).CommandParameter;
+            BorrrarListaEnvio borrar = new BorrrarListaEnvio();
+            borrar.id_envio = id;
+            borrar.Consultar();
+            borrar.ShowDialog();
+            CargarDatosEnvios();
         }
 
         private void Editar(object sender, RoutedEventArgs e)
         {
+
+            int id = (int)((Button)sender).CommandParameter;
+            EditarEnvio editar = new EditarEnvio();
+            editar.id_envio = id;
+            editar.Consultar();
+            editar.ShowDialog();
+            CargarDatosEnvios();
 
         }
     }

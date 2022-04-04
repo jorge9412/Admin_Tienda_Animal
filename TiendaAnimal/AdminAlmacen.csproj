@@ -10,6 +10,7 @@
     <None Remove="logo-instagram - png.png" />
     <None Remove="user.png" />
     <None Remove="Vistas\add.png" />
+    <None Remove="Vistas\Addregistro.png" />
     <None Remove="Vistas\Admin Envios BLANCO.png" />
     <None Remove="Vistas\adminEnBlanco.png" />
     <None Remove="Vistas\close.png" />
@@ -37,6 +38,7 @@
   <ItemGroup>
     <Resource Include="user.png" />
     <Resource Include="Vistas\add.png" />
+    <Resource Include="Vistas\Addregistro.png" />
     <Resource Include="Vistas\Admin Envios BLANCO.png" />
     <Resource Include="Vistas\adminEnBlanco.png" />
     <Resource Include="Vistas\Assets\lovehuella.png" />

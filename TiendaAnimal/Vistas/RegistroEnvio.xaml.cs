@@ -22,7 +22,7 @@ namespace AdminAlmacen.Vistas
         public RegistroEnvio()
         {
             InitializeComponent();
-            DateTime fecha = DateTime.Now;
+            var fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
             txt_fecha.Text = fecha.ToString();
         }
 
@@ -34,7 +34,7 @@ namespace AdminAlmacen.Vistas
             {
                 try
                 {
-                    DateTime fecha = DateTime.Now;
+                    var fecha = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
                     SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
                     string query = "INSERT INTO Cliente_Envio(nombre_cliente,apellido_cliente,cedula_cliente,celular_cliente,correo_cliente,direccion_cliente,nombres_destinatario,direccion_destinatario,ciudad_destino,descripcion_envio,ciudad_origen_envio,precio_envio,fecha_pedido) " +
                         "VALUES('" + txt_nombre_cliente.Text + "','" + txt_apellidos_cliente.Text + "','" + txt_cedula_cliente.Text + "','" + 
@@ -46,6 +46,7 @@ namespace AdminAlmacen.Vistas
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Envio creado correctamente");
+                    this.Close();
                     conn.Close();
                     LimpiarCampos();
                 }

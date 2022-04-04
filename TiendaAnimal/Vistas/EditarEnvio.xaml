@@ -1,4 +1,4 @@
-﻿<Window x:Class="AdminAlmacen.Vistas.RegistroEnvio"
+﻿<Window x:Class="AdminAlmacen.Vistas.EditarEnvio"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -13,7 +13,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdminAlmacen.Vistas"
         mc:Ignorable="d"
-        Title="Registro Envio" Height="600" Width="1000">
+        Title="Editar envio" Height="600" Width="1000">
     <Grid Margin="0,0,0,10" Height="600" Width="1000">
 
         <Rectangle Height="414" VerticalAlignment="Top">
@@ -61,7 +61,7 @@
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF04294D"  
                  CaretBrush="#FF04294D" 
                  materialDesign:HintAssist.Hint="Dirección" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="728,148,58,393"/>
-        <Button x:Name="btn_guardar_envio" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="760,0,0,55" Content="Guardar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_guardar_envio_Click" >
+        <Button x:Name="btn_guardar_envio" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="760,0,0,55" Content="Guardar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_guardar_cambios" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -70,7 +70,7 @@
             </Button.Background>
         </Button>
 
-        <Button x:Name="btn_cerrar_registro" Width="156" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="304,0,0,55" Content="Cerrar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_cerrar_envio_Click" Cursor="Hand" >
+        <Button x:Name="btn_cerrar_registro" Width="156" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="304,0,0,55" Content="Cerrar" FontWeight="Normal" BorderBrush="#FFF3F1F7" Click="btn_cerrar_envio" Cursor="Hand" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF04294D"/>
@@ -80,7 +80,7 @@
         </Button>
 
         <Label Content="Información origen" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="208,25,0,0" Foreground="White" FontSize="28" Background="#FF5CEC8E" Width="748"/>
-        <Image x:Name="logoRegistro_" HorizontalAlignment="Left" Height="36" Margin="910,28,0,0" VerticalAlignment="Top" Width="44" Source="C:\Users\Asus\OneDrive\Documentos\Pascual bravo\HERRAMIENTAS 3\Admin_Tienda_Animal\TiendaAnimal\Assets\enviar.png" Stretch="Fill" StretchDirection="Both"/>
+        <Image x:Name="logoRegistro_" HorizontalAlignment="Left" Height="36" Margin="910,28,0,0" VerticalAlignment="Top" Width="44" Source="/Vistas/Admin Envios BLANCO.png" Stretch="Fill" StretchDirection="Both"/>
         <Label Content="Información destino" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="209,251,0,0" Foreground="White" FontSize="28" Background="#FF5CEC8E" Width="747"/>
         <TextBox x:Name="txt_nombre_destinatario" 
                  materialDesign:HintAssist.Foreground="#FF04294D"
