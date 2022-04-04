@@ -78,6 +78,5 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Image Margin="27,40,542,128" Source="/Vistas/Addregistro.png" Stretch="Fill"/>
     </Grid>
 </Window>
